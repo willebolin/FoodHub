@@ -99,7 +99,7 @@ var JustADash = {
   episode: [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12],
   description:
     'This is a long random paragraph about the Series Just A Dash. This has no real meaning and I am just writing something completely random to test this functionality',
-  image: "'../ThumbNails/JustADash.png'",
+  image: require('../ThumbNails/JustADash.png'),
 };
 
 export var JustADash;
