@@ -12,6 +12,10 @@ import { JustADash } from '../Backend/JustADash';
 import { workingHours } from '../Backend/workingHours';
 import { ItsAlive1 } from '../Backend/ItsAlive1';
 import { HowToWMM } from '../Backend/HowToWMM';
+import { perfectMeatball } from '../Backend/perfectMeatball';
+import { butBetter } from '../Backend/butBetter'
+import { thanksgivingLeftovers } from '../Backend/thanksgivingLeftovers';
+
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from '../../Stylesheet';
 import { SafeAreaView } from 'react-navigation';
@@ -102,18 +106,18 @@ export default class Home extends React.Component {
                   fontWeight: '700',
                   paddingHorizontal: 20,
                 }}>
-                YOUR FAVORITES
+                POPULAR SHOWS
               </Text>
               <View style={{ height: 200, marginTop: 20 }}>
                 <ScrollView horizontal={true}>
                   {/*The code inside of this scrollView will be put in the thumbnail component when working as we want it to*/}
-                  <View style={{ height: 200, width: 130 }}>
+                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
                     <TouchableOpacity
                       onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: ItsAlive1 })
+                        this.props.navigation.navigate('Series', { seriesTitle: perfectMeatball })
                       }>
                       <Image
-                        source={require('../ThumbNails/ItsAlive1thumb.png')}
+                        source={require('../ThumbNails/perfectMeatballthumbnail.jpg')}
                         style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>
@@ -121,10 +125,10 @@ export default class Home extends React.Component {
                   <View style={{ height: 200, width: 130, marginLeft: 20 }}>
                     <TouchableOpacity
                       onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: workingHours })
+                        this.props.navigation.navigate('Series', { seriesTitle: butBetter })
                       }>
                       <Image
-                        source={require('../ThumbNails/24hoursthumb.jpeg')}
+                        source={require('../ThumbNails/butBetterthumb.jpg')}
                         style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>
@@ -132,10 +136,10 @@ export default class Home extends React.Component {
                   <View style={{ height: 200, width: 130, marginLeft: 20 }}>
                     <TouchableOpacity
                       onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: JustADash })
+                        this.props.navigation.navigate('Series', { seriesTitle: thanksgivingLeftovers })
                       }>
                       <Image
-                        source={require('../ThumbNails/JustADashthumb.jpg')}
+                        source={require('../ThumbNails/thanksgivingLeftoversthumb.jpg')}
                         style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>

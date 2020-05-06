@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* FoodHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FoodHubTests.m */; };
+		103CE1858119C5831A34AF88 /* libPods-FoodHub-FoodHubTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C58B9CAD22913858597A8E /* libPods-FoodHub-FoodHubTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		248AF546096564F2AE694C2E /* libPods-FoodHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B834673125B501C2ED5F6B4 /* libPods-FoodHub.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* FoodHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FoodHubTests.m */; };
-		4AA3B20A83AF0A156B06B7A8 /* libPods-FoodHub-FoodHubTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415357891B0E966440AA9570 /* libPods-FoodHub-FoodHubTests.a */; };
-		5BB7DDF135552226E78664E0 /* libPods-FoodHub-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F73FE1435D9E774FFCBCF4 /* libPods-FoodHub-tvOS.a */; };
-		ED02FABC4895C51C08F4DC5D /* libPods-FoodHub-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7993A471ABB7327C562ED313 /* libPods-FoodHub-tvOSTests.a */; };
+		6DAEE0FC78C01A180541BB02 /* libPods-FoodHub-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C102EE823CF652C98B3591 /* libPods-FoodHub-tvOS.a */; };
+		90DF3650DA638B9060BD9D6D /* libPods-FoodHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A00261433197F1B1AEA1C2 /* libPods-FoodHub.a */; };
+		EBDB7CCE4F4D445F8BB326BE /* libPods-FoodHub-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7D4D726767EE9EE98841ED /* libPods-FoodHub-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		00E356EE1AD99517003FC87E /* FoodHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FoodHubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodHubTests.m; sourceTree = "<group>"; };
-		04CE8D93F9A0F676353E3529 /* Pods-FoodHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub.release.xcconfig"; path = "Target Support Files/Pods-FoodHub/Pods-FoodHub.release.xcconfig"; sourceTree = "<group>"; };
+		04C102EE823CF652C98B3591 /* libPods-FoodHub-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodHub-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* FoodHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FoodHub/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FoodHub/AppDelegate.m; sourceTree = "<group>"; };
@@ -52,21 +52,21 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FoodHub/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FoodHub/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FoodHub/main.m; sourceTree = "<group>"; };
+		145AA5362825B715AFFB88A1 /* Pods-FoodHub-FoodHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-FoodHubTests.release.xcconfig"; path = "Target Support Files/Pods-FoodHub-FoodHubTests/Pods-FoodHub-FoodHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* FoodHub-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodHub-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* FoodHub-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoodHub-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		415357891B0E966440AA9570 /* libPods-FoodHub-FoodHubTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodHub-FoodHubTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B834673125B501C2ED5F6B4 /* libPods-FoodHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7993A471ABB7327C562ED313 /* libPods-FoodHub-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodHub-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D4D28EF90FF6DA2DC9E3154 /* Pods-FoodHub-FoodHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-FoodHubTests.release.xcconfig"; path = "Target Support Files/Pods-FoodHub-FoodHubTests/Pods-FoodHub-FoodHubTests.release.xcconfig"; sourceTree = "<group>"; };
-		92F73FE1435D9E774FFCBCF4 /* libPods-FoodHub-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodHub-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4B00359BC082F8DC43FD6B9 /* Pods-FoodHub-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-FoodHub-tvOS/Pods-FoodHub-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C533FE2DC97ADAE681321A8B /* Pods-FoodHub-FoodHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-FoodHubTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodHub-FoodHubTests/Pods-FoodHub-FoodHubTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CCC45E909BAED8C417ACE9D0 /* Pods-FoodHub-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-FoodHub-tvOSTests/Pods-FoodHub-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D66C827055474A6DC2B02E4C /* Pods-FoodHub-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodHub-tvOSTests/Pods-FoodHub-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30A6DEA52F74893753420C6E /* Pods-FoodHub-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodHub-tvOSTests/Pods-FoodHub-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3785720DDBA477DB4D5A7AC1 /* Pods-FoodHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub.debug.xcconfig"; path = "Target Support Files/Pods-FoodHub/Pods-FoodHub.debug.xcconfig"; sourceTree = "<group>"; };
+		6DD79975E60073638F6E8A57 /* Pods-FoodHub-FoodHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-FoodHubTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodHub-FoodHubTests/Pods-FoodHub-FoodHubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71A00261433197F1B1AEA1C2 /* libPods-FoodHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		759AF1DC692D4543D67B9B94 /* Pods-FoodHub-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FoodHub-tvOS/Pods-FoodHub-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B245F1D8E6FFE9C2A45AEE3B /* Pods-FoodHub-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-FoodHub-tvOS/Pods-FoodHub-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B5C58B9CAD22913858597A8E /* libPods-FoodHub-FoodHubTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodHub-FoodHubTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B925DFAF487D69A978DECD4E /* Pods-FoodHub-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-FoodHub-tvOSTests/Pods-FoodHub-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB1040EBF3AA2D7CFDA8ACFA /* Pods-FoodHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub.release.xcconfig"; path = "Target Support Files/Pods-FoodHub/Pods-FoodHub.release.xcconfig"; sourceTree = "<group>"; };
+		DC7D4D726767EE9EE98841ED /* libPods-FoodHub-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodHub-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F00240026E6C657F013C0326 /* Pods-FoodHub-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FoodHub-tvOS/Pods-FoodHub-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		FBA4A1BC18D0E35CE09FFF76 /* Pods-FoodHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodHub.debug.xcconfig"; path = "Target Support Files/Pods-FoodHub/Pods-FoodHub.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AA3B20A83AF0A156B06B7A8 /* libPods-FoodHub-FoodHubTests.a in Frameworks */,
+				103CE1858119C5831A34AF88 /* libPods-FoodHub-FoodHubTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248AF546096564F2AE694C2E /* libPods-FoodHub.a in Frameworks */,
+				90DF3650DA638B9060BD9D6D /* libPods-FoodHub.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB7DDF135552226E78664E0 /* libPods-FoodHub-tvOS.a in Frameworks */,
+				6DAEE0FC78C01A180541BB02 /* libPods-FoodHub-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED02FABC4895C51C08F4DC5D /* libPods-FoodHub-tvOSTests.a in Frameworks */,
+				EBDB7CCE4F4D445F8BB326BE /* libPods-FoodHub-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				4B834673125B501C2ED5F6B4 /* libPods-FoodHub.a */,
-				415357891B0E966440AA9570 /* libPods-FoodHub-FoodHubTests.a */,
-				92F73FE1435D9E774FFCBCF4 /* libPods-FoodHub-tvOS.a */,
-				7993A471ABB7327C562ED313 /* libPods-FoodHub-tvOSTests.a */,
+				71A00261433197F1B1AEA1C2 /* libPods-FoodHub.a */,
+				B5C58B9CAD22913858597A8E /* libPods-FoodHub-FoodHubTests.a */,
+				04C102EE823CF652C98B3591 /* libPods-FoodHub-tvOS.a */,
+				DC7D4D726767EE9EE98841ED /* libPods-FoodHub-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,14 +185,14 @@
 		CC1948AB8B27860FB59EE7C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FBA4A1BC18D0E35CE09FFF76 /* Pods-FoodHub.debug.xcconfig */,
-				04CE8D93F9A0F676353E3529 /* Pods-FoodHub.release.xcconfig */,
-				C533FE2DC97ADAE681321A8B /* Pods-FoodHub-FoodHubTests.debug.xcconfig */,
-				7D4D28EF90FF6DA2DC9E3154 /* Pods-FoodHub-FoodHubTests.release.xcconfig */,
-				A4B00359BC082F8DC43FD6B9 /* Pods-FoodHub-tvOS.debug.xcconfig */,
-				F00240026E6C657F013C0326 /* Pods-FoodHub-tvOS.release.xcconfig */,
-				D66C827055474A6DC2B02E4C /* Pods-FoodHub-tvOSTests.debug.xcconfig */,
-				CCC45E909BAED8C417ACE9D0 /* Pods-FoodHub-tvOSTests.release.xcconfig */,
+				3785720DDBA477DB4D5A7AC1 /* Pods-FoodHub.debug.xcconfig */,
+				DB1040EBF3AA2D7CFDA8ACFA /* Pods-FoodHub.release.xcconfig */,
+				6DD79975E60073638F6E8A57 /* Pods-FoodHub-FoodHubTests.debug.xcconfig */,
+				145AA5362825B715AFFB88A1 /* Pods-FoodHub-FoodHubTests.release.xcconfig */,
+				B245F1D8E6FFE9C2A45AEE3B /* Pods-FoodHub-tvOS.debug.xcconfig */,
+				759AF1DC692D4543D67B9B94 /* Pods-FoodHub-tvOS.release.xcconfig */,
+				30A6DEA52F74893753420C6E /* Pods-FoodHub-tvOSTests.debug.xcconfig */,
+				B925DFAF487D69A978DECD4E /* Pods-FoodHub-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -204,11 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FoodHubTests" */;
 			buildPhases = (
-				1F97EC837FF119CDE983DC35 /* [CP] Check Pods Manifest.lock */,
+				EF446F20405B0B260B46CDB7 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				63B3B04BAFC4D714324AEBA1 /* [CP] Copy Pods Resources */,
+				A8DF919C05068BD80C6B4B1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,13 +224,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FoodHub" */;
 			buildPhases = (
-				CBD66B3081B8B8A61DF92E91 /* [CP] Check Pods Manifest.lock */,
+				718DFCFF380117B7E009A7C7 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				BFA617F5E6E69C48A75D8F57 /* [CP] Copy Pods Resources */,
+				FB9D9107CA660B3D7F6A12AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FoodHub-tvOS" */;
 			buildPhases = (
-				A18D6BBD7A192A37A6037B8E /* [CP] Check Pods Manifest.lock */,
+				0B2CDD53BEAA48EAE72118F3 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -265,7 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FoodHub-tvOSTests" */;
 			buildPhases = (
-				57E433006EFC9C295FE6931A /* [CP] Check Pods Manifest.lock */,
+				E8A80363C6D297A76CA57210 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -293,6 +293,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = NL9CAA5WUC;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -376,83 +377,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		1F97EC837FF119CDE983DC35 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FoodHub-FoodHubTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		57E433006EFC9C295FE6931A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FoodHub-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		63B3B04BAFC4D714324AEBA1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodHub-FoodHubTests/Pods-FoodHub-FoodHubTests-resources.sh",
-				"${PODS_ROOT}/YoutubePlayer-in-WKWebView/WKYTPlayerView/WKYTPlayerView.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WKYTPlayerView.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodHub-FoodHubTests/Pods-FoodHub-FoodHubTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A18D6BBD7A192A37A6037B8E /* [CP] Check Pods Manifest.lock */ = {
+		0B2CDD53BEAA48EAE72118F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,25 +399,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BFA617F5E6E69C48A75D8F57 /* [CP] Copy Pods Resources */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodHub/Pods-FoodHub-resources.sh",
-				"${PODS_ROOT}/YoutubePlayer-in-WKWebView/WKYTPlayerView/WKYTPlayerView.bundle",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "Bundle React Native Code And Images";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WKYTPlayerView.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodHub/Pods-FoodHub-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		CBD66B3081B8B8A61DF92E91 /* [CP] Check Pods Manifest.lock */ = {
+		718DFCFF380117B7E009A7C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -512,6 +433,86 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8DF919C05068BD80C6B4B1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodHub-FoodHubTests/Pods-FoodHub-FoodHubTests-resources.sh",
+				"${PODS_ROOT}/YoutubePlayer-in-WKWebView/WKYTPlayerView/WKYTPlayerView.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WKYTPlayerView.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodHub-FoodHubTests/Pods-FoodHub-FoodHubTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A80363C6D297A76CA57210 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodHub-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF446F20405B0B260B46CDB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodHub-FoodHubTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9D9107CA660B3D7F6A12AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodHub/Pods-FoodHub-resources.sh",
+				"${PODS_ROOT}/YoutubePlayer-in-WKWebView/WKYTPlayerView/WKYTPlayerView.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WKYTPlayerView.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodHub/Pods-FoodHub-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -619,7 +620,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C533FE2DC97ADAE681321A8B /* Pods-FoodHub-FoodHubTests.debug.xcconfig */;
+			baseConfigurationReference = 6DD79975E60073638F6E8A57 /* Pods-FoodHub-FoodHubTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -642,7 +643,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D4D28EF90FF6DA2DC9E3154 /* Pods-FoodHub-FoodHubTests.release.xcconfig */;
+			baseConfigurationReference = 145AA5362825B715AFFB88A1 /* Pods-FoodHub-FoodHubTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -662,11 +663,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBA4A1BC18D0E35CE09FFF76 /* Pods-FoodHub.debug.xcconfig */;
+			baseConfigurationReference = 3785720DDBA477DB4D5A7AC1 /* Pods-FoodHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL9CAA5WUC;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -689,11 +691,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04CE8D93F9A0F676353E3529 /* Pods-FoodHub.release.xcconfig */;
+			baseConfigurationReference = DB1040EBF3AA2D7CFDA8ACFA /* Pods-FoodHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL9CAA5WUC;
 				INFOPLIST_FILE = FoodHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -710,7 +713,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4B00359BC082F8DC43FD6B9 /* Pods-FoodHub-tvOS.debug.xcconfig */;
+			baseConfigurationReference = B245F1D8E6FFE9C2A45AEE3B /* Pods-FoodHub-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -738,7 +741,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F00240026E6C657F013C0326 /* Pods-FoodHub-tvOS.release.xcconfig */;
+			baseConfigurationReference = 759AF1DC692D4543D67B9B94 /* Pods-FoodHub-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -766,7 +769,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D66C827055474A6DC2B02E4C /* Pods-FoodHub-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 30A6DEA52F74893753420C6E /* Pods-FoodHub-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -793,7 +796,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCC45E909BAED8C417ACE9D0 /* Pods-FoodHub-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = B925DFAF487D69A978DECD4E /* Pods-FoodHub-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
