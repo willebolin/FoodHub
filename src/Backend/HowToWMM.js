@@ -65,7 +65,7 @@ var e8 = {
 var HowToWMM = {
     title: 'How To With Matty Matheson',
     episode: [e1, e2, e3, e4, e5, e6, e7, e8],
-    description: "Need to add a description here for this series",
+    description: "Follow Matty Matheson when he creates some of his favourite dishes in the Munchies test kitchen",
     image: require('../ThumbNails/HowToWMM.jpg'),
 };
 
