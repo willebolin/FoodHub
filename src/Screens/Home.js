@@ -21,12 +21,18 @@ export default class Home extends React.Component {
       <SafeAreaView>
         <View>
           <ScrollView>
-            <TouchableOpacity
-              onPress={() =>
-                this.props.navigation.navigate('Series', { JustADash })
-              }>
-              <SeriesHeader series={JustADash} />
-            </TouchableOpacity>
+            <View>
+              <TouchableOpacity
+                onPress={() =>
+                  this.props.navigation.navigate('Series', { seriesTitle: workingHours })
+                }>
+                <Text style={{backgroundColor: "white"}}>{'Now available: Season 1 of 24 Hours at the'}</Text>
+                <Image
+                  style={styles.SeriesImage}
+                  source={require('../ThumbNails/featured.png')}
+                />
+              </TouchableOpacity>
+            </View>
             <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 20 }}>
               <Text
                 style={{
@@ -82,7 +88,7 @@ export default class Home extends React.Component {
                   fontWeight: '700',
                   paddingHorizontal: 20,
                 }}>
-                NEW RELEASES
+                YOUR FAVORITES
               </Text>
               <View style={{ height: 200, marginTop: 20 }}>
                 <ScrollView horizontal={true}>
