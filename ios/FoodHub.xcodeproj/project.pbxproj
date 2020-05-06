@@ -194,7 +194,6 @@
 				D66C827055474A6DC2B02E4C /* Pods-FoodHub-tvOSTests.debug.xcconfig */,
 				CCC45E909BAED8C417ACE9D0 /* Pods-FoodHub-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

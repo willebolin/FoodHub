@@ -8,17 +8,19 @@ import {
   Button,
   Image,
 } from 'react-native';
-import SeriesHeader from '../Components/SeriesHeader';
 import { JustADash } from '../Backend/JustADash';
 import { workingHours } from '../Backend/workingHours';
+import { ItsAlive1 } from '../Backend/ItsAlive1';
+import { HowToWMM } from '../Backend/HowToWMM';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from '../../Stylesheet';
 import { SafeAreaView } from 'react-navigation';
+import ThumbNail from '../Components/ThumbNail'
 
 export default class Home extends React.Component {
   render() {
     return (
-      <SafeAreaView>
+      <SafeAreaView style={{}}>
         <View>
           <ScrollView>
             <View>
@@ -26,7 +28,7 @@ export default class Home extends React.Component {
                 onPress={() =>
                   this.props.navigation.navigate('Series', { seriesTitle: workingHours })
                 }>
-                <Text style={{backgroundColor: "white"}}>{'Now available: Season 1 of 24 Hours at the'}</Text>
+                <Text style={{ backgroundColor: "white" }}>{'Now available: Season 1 of 24 Hours at the'}</Text>
                 <Image
                   style={styles.SeriesImage}
                   source={require('../ThumbNails/featured.png')}
@@ -39,20 +41,21 @@ export default class Home extends React.Component {
                   fontSize: 24,
                   fontWeight: '700',
                   paddingHorizontal: 20,
+
                 }}>
                 NEW RELEASES
               </Text>
               <View style={{ height: 200, marginTop: 20 }}>
                 <ScrollView horizontal={true}>
                   {/*The code inside of this scrollView will be put in the thumbnail component when working as we want it to*/}
-                  <View style={{ height: 200, width: 130 }}>
+                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
                     <TouchableOpacity
                       onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: JustADash })
+                        this.props.navigation.navigate('Series', { seriesTitle: ItsAlive1 })
                       }>
                       <Image
-                        source={require('../ThumbNails/JustADashthumb.jpg')}
-                        style={{height: 200, width: 130}}
+                        source={require('../ThumbNails/ItsAlive1thumb.png')}
+                        style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>
                   </View>
@@ -63,7 +66,7 @@ export default class Home extends React.Component {
                       }>
                       <Image
                         source={require('../ThumbNails/24hoursthumb.jpeg')}
-                        style={{height: 200, width: 130}}
+                        style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>
                   </View>
@@ -74,7 +77,18 @@ export default class Home extends React.Component {
                       }>
                       <Image
                         source={require('../ThumbNails/JustADashthumb.jpg')}
-                        style={{height: 200, width: 130}}
+                        style={{ height: 200, width: 130 }}
+                      />
+                    </TouchableOpacity>
+                  </View>
+                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
+                    <TouchableOpacity
+                      onPress={() =>
+                        this.props.navigation.navigate('Series', { seriesTitle: HowToWMM })
+                      }>
+                      <Image
+                        source={require('../ThumbNails/HowToWMMthumb.jpg')}
+                        style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>
                   </View>
@@ -96,11 +110,11 @@ export default class Home extends React.Component {
                   <View style={{ height: 200, width: 130 }}>
                     <TouchableOpacity
                       onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: JustADash })
+                        this.props.navigation.navigate('Series', { seriesTitle: ItsAlive1 })
                       }>
                       <Image
-                        source={require('../ThumbNails/JustADashthumb.jpg')}
-                        style={{height: 200, width: 130}}
+                        source={require('../ThumbNails/ItsAlive1thumb.png')}
+                        style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>
                   </View>
@@ -111,7 +125,7 @@ export default class Home extends React.Component {
                       }>
                       <Image
                         source={require('../ThumbNails/24hoursthumb.jpeg')}
-                        style={{height: 200, width: 130}}
+                        style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>
                   </View>
@@ -122,7 +136,7 @@ export default class Home extends React.Component {
                       }>
                       <Image
                         source={require('../ThumbNails/JustADashthumb.jpg')}
-                        style={{height: 200, width: 130}}
+                        style={{ height: 200, width: 130 }}
                       />
                     </TouchableOpacity>
                   </View>
