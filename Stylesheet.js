@@ -15,7 +15,7 @@ const styles = {
   },
   SeriesImage: {
     width: '100%',
-    height: 260,
+    height: 220,
   },
   Thumbnail: {
     height: '100%',

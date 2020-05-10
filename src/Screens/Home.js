@@ -26,13 +26,13 @@ export default class Home extends React.Component {
     return (
       <SafeAreaView style={{}}>
         <View>
-          <ScrollView>
+          <ScrollView style={{ backgroundColor: "white" }}>
             <View>
               <TouchableOpacity
                 onPress={() =>
                   this.props.navigation.navigate('Series', { seriesTitle: workingHours })
                 }>
-                <Text style={{ backgroundColor: "white" }}>{'Now available: Season 1 of 24 Hours at the'}</Text>
+                <Text style={{paddingTop: 10}}>{'Now available: Season 1 of 24 Hours at the'}</Text>
                 <Image
                   style={styles.SeriesImage}
                   source={require('../ThumbNails/featured.png')}
@@ -63,7 +63,7 @@ export default class Home extends React.Component {
                       />
                     </TouchableOpacity>
                   </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
+                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
                     <TouchableOpacity
                       onPress={() =>
                         this.props.navigation.navigate('Series', { seriesTitle: workingHours })
@@ -74,7 +74,7 @@ export default class Home extends React.Component {
                       />
                     </TouchableOpacity>
                   </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
+                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
                     <TouchableOpacity
                       onPress={() =>
                         this.props.navigation.navigate('Series', { seriesTitle: JustADash })
@@ -85,7 +85,7 @@ export default class Home extends React.Component {
                       />
                     </TouchableOpacity>
                   </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
+                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
                     <TouchableOpacity
                       onPress={() =>
                         this.props.navigation.navigate('Series', { seriesTitle: HowToWMM })
@@ -111,7 +111,7 @@ export default class Home extends React.Component {
               <View style={{ height: 200, marginTop: 20 }}>
                 <ScrollView horizontal={true}>
                   {/*The code inside of this scrollView will be put in the thumbnail component when working as we want it to*/}
-                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
+                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
                     <TouchableOpacity
                       onPress={() =>
                         this.props.navigation.navigate('Series', { seriesTitle: perfectMeatball })
@@ -122,7 +122,7 @@ export default class Home extends React.Component {
                       />
                     </TouchableOpacity>
                   </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
+                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
                     <TouchableOpacity
                       onPress={() =>
                         this.props.navigation.navigate('Series', { seriesTitle: butBetter })
@@ -133,7 +133,7 @@ export default class Home extends React.Component {
                       />
                     </TouchableOpacity>
                   </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
+                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
                     <TouchableOpacity
                       onPress={() =>
                         this.props.navigation.navigate('Series', { seriesTitle: thanksgivingLeftovers })

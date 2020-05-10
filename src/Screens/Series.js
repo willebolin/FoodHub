@@ -38,7 +38,7 @@ export default class Series extends React.Component {
 
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={{ paddingLeft: 15, paddingRight:15 }}>
         <View>
           <SeriesHeader series={this.series} />
           {this.renderEpisodes()}

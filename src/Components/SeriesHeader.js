@@ -20,7 +20,7 @@ export default class SeriesHeader extends React.Component {
           //source={require(JSON.stringify(this.props.series.image))}
           source={this.props.series.image}
         />
-        <Text>{this.props.series.description}</Text>
+        <Text style={{ paddingBottom: 20 }}>{this.props.series.description}</Text>
       </View>
     );
   }

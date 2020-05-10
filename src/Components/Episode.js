@@ -26,12 +26,11 @@ export default class Episode extends React.Component {
               console.log('onChangeFullscreen', e.isFullscreen)
             }
           />
-          <View style={{flexDirection: 'column', justifyContent: 'center'}}>
-            <Text>Episode {this.props.episode.episode_number}</Text>
-            <Text>{this.props.episode.episode_title}</Text>
+          <View style={{flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>
+            <Text style={{ fontWeight: "bold" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title}</Text>
           </View>
         </View>
-        <View style={{flexDirection: 'column'}}>
+        <View style={{flexDirection: 'column', paddingTop: 10, paddingBottom: 20}}>
           <Text>{this.props.episode.description}</Text>
         </View>
       </SafeAreaView>
