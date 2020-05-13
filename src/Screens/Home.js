@@ -19,7 +19,8 @@ import { thanksgivingLeftovers } from '../Backend/thanksgivingLeftovers';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from '../../Stylesheet';
 import { SafeAreaView } from 'react-navigation';
-import ThumbNail from '../Components/ThumbNail'
+import ThumbNail from '../Components/ThumbNail';
+import Slide from '../Components/Slider';
 
 export default class Home extends React.Component {
   render() {
@@ -28,16 +29,7 @@ export default class Home extends React.Component {
         <View>
           <ScrollView style={{ backgroundColor: "white" }}>
             <View>
-              <TouchableOpacity
-                onPress={() =>
-                  this.props.navigation.navigate('Series', { seriesTitle: workingHours })
-                }>
-                <Text style={{ paddingTop: 10 }}>{'Now available: Season 1 of 24 Hours at the'}</Text>
-                <Image
-                  style={styles.SeriesImage}
-                  source={require('../ThumbNails/featured.png')}
-                />
-              </TouchableOpacity>
+              <Slide navigation={this.props.navigation}/>
             </View>
             <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 20 }}>
               <Text
