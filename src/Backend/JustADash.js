@@ -11,7 +11,7 @@ var e2 = {
   series_title: 'Just A Dash',
   episode_title: 'Worlds Best Halifax Doinar',
   episode_number: '2',
-  description: 'This is episode two',
+  description: 'THIS ONE IS FOR EVERY BLUENOSER! THE GREATEST OF ALL DONAIRS! THE GREATEST SAUCE OF ALL TIME AND SPACE WILL BE REVEALED TO THE ENTIRE WORLD AND MAYBE ITS NOT READY!',
 };
 
 var e3 = {
