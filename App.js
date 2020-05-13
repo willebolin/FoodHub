@@ -1,7 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { ScrollView, StyleSheet, View, Text, SafeAreaView } from 'react-native';
-import Testvideo from './src/Components/Testvideo';
 import Series from './src/Screens/Series';
 import Home from './src/Screens/Home';
 import { NavigationContainer, StackActions } from '@react-navigation/native';

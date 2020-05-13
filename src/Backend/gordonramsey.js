@@ -3,8 +3,7 @@ var e1 = {
   series_title: 'Gordon Ramsey',
   episode_title: 'Chocolate Sponge with Fresh Ginger',
   episode_number: '1',
-  description: 'This unbeatable combination of chocolate and ginger is sweet and a bit spicy. Perfect for dinner parties, perfect for Valentine Day... a really great recipe. 
-',
+  description: 'This unbeatable combination of chocolate and ginger is sweet and a bit spicy. Perfect for dinner parties, perfect for Valentine Day... a really great recipe.',
 };
 
 var e2 = {
@@ -18,7 +17,7 @@ var e2 = {
 var e3 = {
   ID: 'jwu2y9x5OlM',
   series_title: 'Gordon Ramsey',
-  episode_title: 'The Ultimate Steak Sandwich' ,
+  episode_title: 'The Ultimate Steak Sandwich',
   episode_number: '3',
   description: 'Gordon shows you how to make the ultimate steak sandwich with an excellent tomato relish and mustard mayonnaise.',
 };
@@ -36,8 +35,7 @@ var e5 = {
   series_title: 'Gordon Ramsey',
   episode_title: 'Slow-Roasted Pork Belly',
   episode_number: '5',
-  description: 'Slow-roasting really locks in the flavours, and the end result will be a delicious crispy delight perfect to share with family and friends. 
-',
+  description: 'Slow-roasting really locks in the flavours, and the end result will be a delicious crispy delight perfect to share with family and friends. ',
 };
 
 var e6 = {

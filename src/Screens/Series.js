@@ -8,12 +8,12 @@ import {
   Dimensions,
   Image,
 } from 'react-native';
-import {styles} from '../../Stylesheet';
+import { styles } from '../../Stylesheet';
 import SeriesHeader from '../Components/SeriesHeader';
 //import {JustADash} from '../Backend/JustADash';
 import Episode from '../Components/Episode';
 
-const {height, width} = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 
 export default class Series extends React.Component {
   constructor(props) {
@@ -29,6 +29,7 @@ export default class Series extends React.Component {
       returnobject.push(
         <Episode
           episode={this.series.episode[i]}
+          series={this.series}
           key={this.series.episode[i].ID}
         />,
       );
@@ -36,9 +37,14 @@ export default class Series extends React.Component {
     return returnobject;
   }
 
+  componentWillUnmount() {
+    this.props.route.params.callHome();
+    console.log("made it here")
+  }
+
   render() {
     return (
-      <ScrollView style={{ paddingLeft: 15, paddingRight:15 }}>
+      <ScrollView style={{ paddingLeft: 15, paddingRight: 15 }}>
         <View>
           <SeriesHeader series={this.series} />
           {this.renderEpisodes()}

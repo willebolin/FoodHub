@@ -79,6 +79,8 @@ target 'FoodHub' do
 
   pod 'YouTubeSdk', :path => '../node_modules/react-native-youtube-sdk'
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'FoodHubTests' do
     inherit! :complete
     # Pods for testing

@@ -68,8 +68,8 @@ var ramenSchool = {
     title: 'Ramen School',
     episode: [e1, e2, e3, e4, e5, e6, e7, e8],
     description: "In this new series we'll be going through how to make great ramen at home. Be warned, it's not a short process but I wanted to show you the theory behind ramen so that you can produce your own, authentic and unique ramen rather than just following recipes. Hopefully through these videos you'll understand the basics of what makes a great bowl of ramen. ",
-    image: require('../ThumbNails/RamenSchool.jpg'),
-    thumbnail: require('../ThumbNails/RamenSchoolthumb.png')
+    image: require('../ThumbNails/Ramenschool.jpg'),
+    thumbnail: require('../ThumbNails/Ramenschoolthumb.jpg')
 };
 
 export var ramenSchool;
