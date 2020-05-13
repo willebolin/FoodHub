@@ -17,7 +17,7 @@ var e2 = {
 var e3 = {
   ID: 'ydQ5UZpJRls',
   series_title: 'Working 24 Hours at',
-  episode_title: 'New Yorks Most Iconic Deli' ,
+  episode_title: 'New Yorks Most Iconic Deli',
   episode_number: '3',
   description: 'This is episode three',
 };
@@ -45,6 +45,7 @@ var workingHours = {
   description:
     'This is a long random paragraph about the Series 24 hours working at. This has no real meaning and I am just writing something completely random to test this functionality',
   image: require('../ThumbNails/24hours.jpg'),
+  thumbnail: require('../ThumbNails/24hoursthumb.jpeg')
 };
 
 export var workingHours;

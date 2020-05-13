@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                 onPress={() =>
                   this.props.navigation.navigate('Series', { seriesTitle: workingHours })
                 }>
-                <Text style={{paddingTop: 10}}>{'Now available: Season 1 of 24 Hours at the'}</Text>
+                <Text style={{ paddingTop: 10 }}>{'Now available: Season 1 of 24 Hours at the'}</Text>
                 <Image
                   style={styles.SeriesImage}
                   source={require('../ThumbNails/featured.png')}
@@ -51,51 +51,10 @@ export default class Home extends React.Component {
               </Text>
               <View style={{ height: 200, marginTop: 20 }}>
                 <ScrollView horizontal={true}>
-                  {/*The code inside of this scrollView will be put in the thumbnail component when working as we want it to*/}
-                  <View style={{ height: 200, width: 130, marginLeft: 20 }}>
-                    <TouchableOpacity
-                      onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: ItsAlive1 })
-                      }>
-                      <Image
-                        source={require('../ThumbNails/ItsAlive1thumb.png')}
-                        style={{ height: 200, width: 130 }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
-                    <TouchableOpacity
-                      onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: workingHours })
-                      }>
-                      <Image
-                        source={require('../ThumbNails/24hoursthumb.jpeg')}
-                        style={{ height: 200, width: 130 }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
-                    <TouchableOpacity
-                      onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: JustADash })
-                      }>
-                      <Image
-                        source={require('../ThumbNails/JustADashthumb.jpg')}
-                        style={{ height: 200, width: 130 }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
-                    <TouchableOpacity
-                      onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: HowToWMM })
-                      }>
-                      <Image
-                        source={require('../ThumbNails/HowToWMMthumb.jpg')}
-                        style={{ height: 200, width: 130 }}
-                      />
-                    </TouchableOpacity>
-                  </View>
+                  <ThumbNail navigation={this.props.navigation} series={ItsAlive1} />
+                  <ThumbNail navigation={this.props.navigation} series={workingHours} />
+                  <ThumbNail navigation={this.props.navigation} series={JustADash} />
+                  <ThumbNail navigation={this.props.navigation} series={HowToWMM} />
                 </ScrollView>
               </View>
             </View>

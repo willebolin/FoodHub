@@ -67,6 +67,7 @@ var HowToWMM = {
     episode: [e1, e2, e3, e4, e5, e6, e7, e8],
     description: "Follow Matty Matheson when he creates some of his favourite dishes in the Munchies test kitchen",
     image: require('../ThumbNails/HowToWMM.jpg'),
+    thumbnail: require('../ThumbNails/HowToWMMthumb.jpg'),
 };
 
 export var HowToWMM;

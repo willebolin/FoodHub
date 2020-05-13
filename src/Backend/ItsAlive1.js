@@ -67,6 +67,7 @@ var ItsAlive1 = {
     episode: [e1, e2, e3, e4, e5, e6, e7, e8],
     description: "Join Bon Appètit test kitchen manager, Brad Lenoe, on a wild, roundabout and marginally scientific adventure exploring fermented foods and more. From cultured butter and kombucha, to kimchi and miso, to beer and tepache, learn how to make fermented and live foods yourself",
     image: require('../ThumbNails/ItsAlive1.jpg'),
+    thumbnail: require('../ThumbNails/ItsAlive1thumb.png')
 };
 
 export var ItsAlive1;

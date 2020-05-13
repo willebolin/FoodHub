@@ -100,6 +100,7 @@ var JustADash = {
   description:
     'Just A Dash is not your normal tv show. Follow Matty Matheson on his cooking adventure of failure, success, and stories about life',
   image: require('../ThumbNails/JustADash.png'),
+  thumbnail: require('../ThumbNails/JustADashthumb.jpg'),
 };
 
 export var JustADash;
