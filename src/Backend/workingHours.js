@@ -3,7 +3,7 @@ var e1 = {
   series_title: 'Working 24 Hours at',
   episode_title: 'Chick-fil-A',
   episode_number: '1',
-  description: 'This is episode one',
+  description: 'Bon Appetit Deputy Editor Andrew Knowlton works 24 hours straight at the original Chick-fil-A in Hapeville, Georgia. Upside: unlimited waffle fries.',
 };
 
 var e2 = {
@@ -11,7 +11,7 @@ var e2 = {
   series_title: 'Working 24 Hours at',
   episode_title: 'Best BBQ in the World',
   episode_number: '2',
-  description: 'This is episode two',
+  description: 'Bon Appetit deputy editor Andrew Knowlton spends 24 hours at Franklin Barbecue starting out at 6:00 am and meeting fans of the restaurant who have been waiting since 4:00 am to be the first in line. He spends the rest of the day learning how they barbecue meat so delicious the brisket has sold out every day since Franklin\'s opened.',
 };
 
 var e3 = {
@@ -19,7 +19,7 @@ var e3 = {
   series_title: 'Working 24 Hours at',
   episode_title: 'New Yorks Most Iconic Deli',
   episode_number: '3',
-  description: 'This is episode three',
+  description: 'Bon Appétit editor Andrew Knowlton attempts to work 24 hours straight at Katz\'s Delicatessen in New York City. Katz\'s Deli, which has been around since 1888, is home to the famous scene from "When Harry Met Sally" and offers the best brisket, pastrami, and corned beef sandwiches in NYC. Can Knowlton survive the hectic ups and downs of the busiest deli in the city that never sleeps?',
 };
 
 var e4 = {
@@ -27,7 +27,7 @@ var e4 = {
   series_title: 'Working 24 Hours at',
   episode_title: 'Waffle House',
   episode_number: '4',
-  description: 'This is episode four',
+  description: 'Bon Appetit\'s Andrew Knowlton works a 24-hour shift at Waffle House. The first Waffle House diner opened in Atlanta, Georgia in 1955. Today, the chain restaurant has more than 1,700 locations in 25 states, mostly in the South. Waffle House is known for being open 24 hours a day, 365 days a year.',
 };
 
 var e5 = {
@@ -35,7 +35,7 @@ var e5 = {
   series_title: 'Working 24 Hours at',
   episode_title: 'Las Vegas',
   episode_number: '5',
-  description: 'This is episode five',
+  description: 'In honor of the 50th anniversary of Caesars Palace, Bon Appétit Deputy Editor Andrew Knowlton took on the ultimate Las Vegas challenge: to work for 24 hours straight at Caesars Palace hotel and casino.',
 };
 
 
