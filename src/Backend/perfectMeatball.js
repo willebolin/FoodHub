@@ -3,7 +3,7 @@ var e1 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'Can I Make The Perfect Meatball ?',
   episode_number: '1',
-  description: 'This is episode one',
+  description: 'New Series ! Making the perfect meatball was supposed to be a walk in the park... What did I got myself into ?!?',
 };
 
 var e2 = {
@@ -11,7 +11,7 @@ var e2 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'The Juiciest Italian Meatballs I Have Ever Made !',
   episode_number: '2',
-  description: 'This is episode two',
+  description: 'Ep2. I tasted, replicated and tried to improve on Italian Meatballs. Big thanks to 368 in NYC for letting me use their kitchen :)',
 };
 
 var e3 = {
@@ -19,7 +19,7 @@ var e3 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'Swedish Meatballs : The Secret I Did NOT Expect...',
   episode_number: '3',
-  description: 'This is episode three',
+  description: 'Ep3. I went to Sweden to learn how to make Swedish Meatballs aka Köttbullar. Very different from Italian meatballs. Big thanks to Chef Niklas Ekstedt for having me !',
 };
 
 var e4 = {
@@ -27,7 +27,7 @@ var e4 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'My Initiation into True Turkish Meatballs "Köfte"...',
   episode_number: '4',
-  description: 'This is episode four',
+  description: 'Ep4. I went to Istanbul, Turkey, to learn the mysteries of Turkish Meatballs aka Köfte. In short : Mind, blown.',
 };
 
 var e5 = {
@@ -35,7 +35,7 @@ var e5 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'Can I Create a Perfectly Round Meatball ?',
   episode_number: '5',
-  description: 'This is episode five',
+  description: 'Ep5. Meatball rarely look like Balls. It\'s killing me. What does it take to make a Perfectly spherical meatball ? Well, a tad more than I thought apparently... ',
 };
 
 var e6 = {
@@ -43,7 +43,7 @@ var e6 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'Eureka ! Rounder and Juicier Meatballs Using Science...',
   episode_number: '6',
-  description: 'This is episode six',
+  description: 'I found a method to make perfectly round meatballs using my Meatball gun 2.0 and Archimedes\' principle. There\'s a surprise at the end. ',
 };
 
 var e7 = {
@@ -51,7 +51,7 @@ var e7 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'French Chef Reacts To MEATBALL VIDEOS !',
   episode_number: '7',
-  description: 'This is episode seven',
+  description: '2 Things : 1 - Gordon is a legend, and 2 - let\'s not to watch a Meatball Mukbang ever again... ',
 };
 
 var e8 = {
@@ -59,7 +59,7 @@ var e8 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'Have We Created The Perfect Meatball Blend ?',
   episode_number: '8',
-  description: 'This is episode eight',
+  description: 'In this Meatball series, I might have focused too much on Balls and not enough on Meat... Time to correct that ! ',
 };
 
 var e9 = {
@@ -67,7 +67,7 @@ var e9 = {
   series_title: 'The Perfect Meatball',
   episode_title: 'A Cooks Greatest Enemy [Series Finale]',
   episode_number: '9',
-  description: 'This is episode nine',
+  description: 'My Perfect Meatball Recipe is finally here. ',
 };
 
 
