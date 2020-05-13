@@ -3,7 +3,7 @@ var e1 = {
   series_title: 'Just A Dash',
   episode_title: 'Bone Broth Brigade Oxtail Pho',
   episode_number: '1',
-  description: 'This is episode one',
+  description: 'PHO IS LIFE AND JUST A DASH IS BROTH LETS SIP UP SOME LOVE! THIS WEEK AND THE FIRST JUST A DASH IS EVERYTHING YOU WISHED IT WOULD BE! YOURE WELCOME',
 };
 
 var e2 = {
