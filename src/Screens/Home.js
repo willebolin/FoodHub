@@ -69,40 +69,9 @@ export default class Home extends React.Component {
               </Text>
               <View style={{ height: 200, marginTop: 20 }}>
                 <ScrollView horizontal={true}>
-                  {/*The code inside of this scrollView will be put in the thumbnail component when working as we want it to*/}
-                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
-                    <TouchableOpacity
-                      onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: perfectMeatball })
-                      }>
-                      <Image
-                        source={require('../ThumbNails/perfectMeatballthumbnail.jpg')}
-                        style={{ height: 200, width: 130 }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
-                    <TouchableOpacity
-                      onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: butBetter })
-                      }>
-                      <Image
-                        source={require('../ThumbNails/butBetterthumb.jpg')}
-                        style={{ height: 200, width: 130 }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                  <View style={{ height: 200, width: 130, marginLeft: 15 }}>
-                    <TouchableOpacity
-                      onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: thanksgivingLeftovers })
-                      }>
-                      <Image
-                        source={require('../ThumbNails/thanksgivingLeftoversthumb.jpg')}
-                        style={{ height: 200, width: 130 }}
-                      />
-                    </TouchableOpacity>
-                  </View>
+                  <ThumbNail navigation={this.props.navigation} series={perfectMeatball} />
+                  <ThumbNail navigation={this.props.navigation} series={butBetter} />
+                  <ThumbNail navigation={this.props.navigation} series={thanksgivingLeftovers} />
                 </ScrollView>
               </View>
             </View>
