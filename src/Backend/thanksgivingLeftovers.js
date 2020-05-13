@@ -3,7 +3,7 @@ var e1 = {
   series_title: 'Thanksgiving Leftovers!',
   episode_title: 'Turkey Manicotti Recipe -- Leftover Turkey Special',
   episode_number: '1',
-  description: 'This is episode one',
+  description: 'Learn how to make a Turkey Manicotti Recipe!',
 };
 
 var e2 = {
@@ -11,7 +11,7 @@ var e2 = {
   series_title: 'TThanksgiving Leftovers!',
   episode_title: 'Turkey Noodle Casserole Recipe - Thanksgiving Leftover Turkey Special',
   episode_number: '2',
-  description: 'This is episode two',
+  description: 'Learn how to make a Turkey Noodle Casserole Recipe!',
 };
 
 var e3 = {
@@ -19,7 +19,7 @@ var e3 = {
   series_title: 'Thanksgiving Leftovers!',
   episode_title: 'Tom Kha Gai – Spicy Thai Coconut Chicken (or Turkey) Soup Recipe',
   episode_number: '3',
-  description: 'This is episode three',
+  description: 'Learn how to make a Tom Kha Gai soup recipe!',
 };
 
 var e4 = {
@@ -27,7 +27,7 @@ var e4 = {
   series_title: 'Thanksgiving Leftovers!',
   episode_title: 'Turkey Flautas Recipe - How to Make Crispy Flautas - Thanksgiving Leftover Special!',
   episode_number: '4',
-  description: 'This is episode four',
+  description: 'Learn how to make Turkey Flautas!',
 };
 
 var e5 = {
@@ -35,7 +35,7 @@ var e5 = {
   series_title: 'Thanksgiving Leftovers!',
   episode_title: 'Turkey Matzo Ball Soup - Leftover Turkey Soup Recipe for Thanksgivingukkah',
   episode_number: '5',
-  description: 'This is episode five',
+  description: 'Learn how to make a Turkey Matzo Ball Soup recipe!',
 };
 
 
