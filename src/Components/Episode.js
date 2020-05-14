@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import { styles } from '../../Stylesheet';
 import YouTubePlayer from 'react-native-youtube-sdk';
 import { SafeAreaView } from 'react-navigation';
 import AsyncStorage from '@react-native-community/async-storage';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default class Episode extends React.Component {
   constructor(props) {
@@ -11,6 +12,10 @@ export default class Episode extends React.Component {
 
     this.isPlaying = this.isPlaying.bind(this)
     this.loadData = this.loadData.bind(this)
+
+    this.state = {
+      limit:160
+    }
 
   }
 
@@ -28,6 +33,22 @@ export default class Episode extends React.Component {
       console.log(this.props.episode.episode_number)
     } catch (error) {
       console.log(error)
+    }
+  }
+
+  onLoadMore() {
+    this.setState({limit: 800});
+  }
+
+  renderDescription(descr) {
+    const limit = 160;
+    if(descr.length < this.state.limit) {
+      return (<Text>{descr}</Text>);
+    } else {
+      return (
+        [<Text>{descr.substring(0, limit)}...</Text>,
+          <Text onPress={()=> this.onLoadMore()} style={{ fontWeight:'bold', color:'blue' }}>Read More</Text>]
+      );
     }
   }
 
@@ -56,7 +77,7 @@ export default class Episode extends React.Component {
           </View>
         </View>
         <View style={{ flexDirection: 'column', paddingTop: 10, paddingBottom: 20 }}>
-          <Text>{this.props.episode.description}</Text>
+          {this.renderDescription(this.props.episode.description)}
         </View>
       </SafeAreaView>
     );

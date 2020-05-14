@@ -19,7 +19,7 @@ import { perfectMeatball } from '../Backend/perfectMeatball';
 const{width} = Dimensions.get('window');
 
 const Slider = props => ( //This is a function
-    <View style={stylesHard.container}>
+    <View style={styles.container}>
         <TouchableOpacity
             onPress={() =>
                 props.navigation.navigate('Series', { seriesTitle: props.series })
@@ -28,13 +28,6 @@ const Slider = props => ( //This is a function
         </TouchableOpacity>
     </View>
 )
-
-const stylesHard = {
-    container: {
-        flex: 1,
-        justifyContent: 'center'
-    }
-}
 
 export default class extends React.Component {
     constructor(props) {
