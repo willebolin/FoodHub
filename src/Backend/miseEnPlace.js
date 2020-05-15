@@ -34,7 +34,7 @@ var e4 = {
 var e5 = {
     ID: 'X2jakwIVLbY',
     series_title: "Mise en Place",
-    episode_title: 'How a Legendary Chef Runs One of the World's Most Iconic Restaurants',
+    episode_title: 'How a Legendary Chef Runs One of the World\'s Most Iconic Restaurants',
     episode_number: '5',
     description: 'On this episode of Mise En Place, we follow chef Jean-Georges Vongerichten through the kitchen at Jean-Georges, New York to see how he and his team painstakingly create and perfect dishes like yellowfin tuna noodles, sea urchin crostini, egg toast with caviar, perfectly cooked squab, and more.',
 };
@@ -44,7 +44,7 @@ var e6 = {
     series_title: "Mise en Place",
     episode_title: 'How a Master Chef Runs the Only Las Vegas Restaurant Awarded 3 Michelin Stars',
     episode_number: '6',
-    description: 'Welcome to part two of Chefs of the Strip. Today's episode focuses on Christophe De Lellis, the chef behind the majestic Joël Robuchon restaurant in the MGM Grand hotel.',
+    description: 'Welcome to part two of Chefs of the Strip. Today\'s episode focuses on Christophe De Lellis, the chef behind the majestic Joël Robuchon restaurant in the MGM Grand hotel.',
 };
 
 var e7 = {
@@ -60,7 +60,7 @@ var e8 = {
     series_title: "Mise en Place",
     episode_title: 'How Chef Emma Bengtsson Runs a Two-Michelin-Starred Swedish Restaurant in NYC',
     episode_number: '8',
-    description: 'On this episode of Mise En Place, chef Emma Bengtsson tells use how she went from pastry chef to head chef of Two-Michelin-Starred Aquavit, and how she makes her world famous bird's nest dessert.',
+    description: 'On this episode of Mise En Place, chef Emma Bengtsson tells use how she went from pastry chef to head chef of Two-Michelin-Starred Aquavit, and how she makes her world famous bird\'s nest dessert.',
 };
 
 
