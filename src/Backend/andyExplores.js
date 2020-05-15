@@ -3,7 +3,7 @@ var e1 = {
     series_title: "Andy Explores",
     episode_title: 'Andy Learns Thai Cooking Techniques from a Thai Chef',
     episode_number: '1',
-    description: 'Andy Baraghani loves Thai food, especially the flavors of the northeastern region of Isan. Fish sauce, lime, chilis amongst others make the cuisine distinct, but what does it take to cook Isan Thai food? We sent Andy to Somtum Der in New York's East Village to explore the pillars of Thai cooking. Join him to learn about Isan spices, how to make perfect Thai fried chicken, coconut sticky rice and so much more.',
+    description: 'Andy Baraghani loves Thai food, especially the flavors of the northeastern region of Isan. Fish sauce, lime, chilis amongst others make the cuisine distinct, but what does it take to cook Isan Thai food? We sent Andy to Somtum Der in New York\'s East Village to explore the pillars of Thai cooking. Join him to learn about Isan spices, how to make perfect Thai fried chicken, coconut sticky rice and so much more.',
 };
 
 var e2 = {
@@ -11,7 +11,7 @@ var e2 = {
     series_title: "Andy Explores",
     episode_title: 'Andy Learns How to Cook Palestinian Food',
     episode_number: '2',
-    description: 'Andy Baraghani is on to his next exploration and this time it's Palestinian cooking. He's joined by Rawia Bishara, a fixture in Palestinian cooking, to introduce him to the essentials of her culinary heritage at her restaurant Tanoreen. She teaches Andy how to cook three dishes: fatoush, makloobeh and knafeh.',
+    description: 'Andy Baraghani is on to his next exploration and this time it\'s Palestinian cooking. He\'s joined by Rawia Bishara, a fixture in Palestinian cooking, to introduce him to the essentials of her culinary heritage at her restaurant Tanoreen. She teaches Andy how to cook three dishes: fatoush, makloobeh and knafeh.',
 };
 
 var e3 = {
@@ -19,7 +19,7 @@ var e3 = {
     series_title: "Andy Explores",
     episode_title: 'Andy Learns How to Cook Senegalese Food',
     episode_number: '3',
-    description: 'Andy Baraghani is basically starting from scratch with it comes to Senegalese food -- it's not a cuisine he is very familiar with. Join Andy on yet another culinary exploration as he learns how to make four traditional Senegalese dishes under the guidance of Pierre Thiam, the co-founder and executive chef at Teranga.',
+    description: 'Andy Baraghani is basically starting from scratch with it comes to Senegalese food -- it\'s not a cuisine he is very familiar with. Join Andy on yet another culinary exploration as he learns how to make four traditional Senegalese dishes under the guidance of Pierre Thiam, the co-founder and executive chef at Teranga.',
 };
 
 var e4 = {
