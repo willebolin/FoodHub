@@ -17,7 +17,7 @@ var e2 = {
 var e3 = {
     ID: '1EPDJBjZPJI',
     series_title: "Handmade",
-    episode_title: 'How Tamales Are Made at One of NYC's Favorite Puebla Tamal Shops',
+    episode_title: 'How Tamales Are Made at One of NYC\'s Favorite Puebla Tamal Shops',
     episode_number: '3',
     description: 'On this episode of Handmade, Factory Tamal owner Fernando Lopez walks us through the complex and traditional process of hand-making tamales the way his family has done for generations.',
 };
@@ -25,9 +25,9 @@ var e3 = {
 var e4 = {
     ID: 'b5dv_j9SdC0',
     series_title: "Handmade",
-    episode_title: 'The Best Slice in NYC Comes From Scarr's Pizza's House-Milled Flour Operation',
+    episode_title: 'The Best Slice in NYC Comes From Scarr\'s Pizza\'s House-Milled Flour Operation',
     episode_number: '4',
-    description: 'On this episode of Handmade, Scarr's Pizza owner Scarr Pimentel shows us why his fresh-milled wheat makes his pizza slices the healthiest, and tastiest in NYC.',
+    description: 'On this episode of Handmade, Scarr\'s Pizza owner Scarr Pimentel shows us why his fresh-milled wheat makes his pizza slices the healthiest, and tastiest in NYC.',
 };
 
 var e5 = {
@@ -35,7 +35,7 @@ var e5 = {
     series_title: "Handmade",
     episode_title: 'The Hand-Ripped Noodle Empire That Took Over NYC',
     episode_number: '5',
-    description: 'On this episode of Handmade, Xi'an Famous foods CEO Jason Wang shows us what goes into hand-ripping three to five thousand noodle dishes a day at the family owned, fast-casual New York City-based sensation.',
+    description: 'On this episode of Handmade, Xi\'an Famous foods CEO Jason Wang shows us what goes into hand-ripping three to five thousand noodle dishes a day at the family owned, fast-casual New York City-based sensation.',
 };
 
 var e6 = {
@@ -49,9 +49,9 @@ var e6 = {
 var e7 = {
     ID: 'AZDHeOeMR3g',
     series_title: "Handmade",
-    episode_title: 'How Knives Are Made for New York's Best Restaurants',
+    episode_title: 'How Knives Are Made for New York\'s Best Restaurants',
     episode_number: '7',
-    description: 'Handmade takes you behind the scenes to see how Will Griffin of Griffin Bladeworks in New York City hand-forges knives for some of New York City's best Restaurants.',
+    description: 'Handmade takes you behind the scenes to see how Will Griffin of Griffin Bladeworks in New York City hand-forges knives for some of New York City\'s best Restaurants.',
 };
 
 
