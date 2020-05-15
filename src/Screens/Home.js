@@ -17,6 +17,7 @@ import { SafeAreaView } from 'react-navigation';
 import ThumbNail from '../Components/ThumbNail';
 import Slide from '../Components/Slider';
 import AsyncStorage from '@react-native-community/async-storage';
+import { styles } from '../../Stylesheet';
 
 
 export default class Home extends React.Component {
@@ -43,7 +44,7 @@ export default class Home extends React.Component {
       const keys = await AsyncStorage.getAllKeys()
       if (keys.length !== 0) {
         console.log(this.state.startedShows)
-        this.setState({ isWatching: "true", rubric: "KEEP WATCHING", startedShows: keys })
+        this.setState({ isWatching: "true", rubric: "Keep watching", startedShows: keys })
         console.log(this.state.startedShows)
       }
     } catch (error) {
@@ -77,21 +78,21 @@ export default class Home extends React.Component {
             <View>
               <Slide navigation={this.props.navigation} />
             </View>
-            <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 20 }}>
-              <Text style={{ fontSize: 24, fontWeight: '700', paddingHorizontal: 20, }}>
+            <View style={styles.categoriesElement}>
+              <Text style={styles.categoriesText}>
                 {this.state.rubric}
               </Text>
-              <View style={{ height: 200, marginTop: 20 }}>
+              <View style={styles.categoriesScroll}>
                 <ScrollView horizontal={true}>
                   {this.loadKeepWatching()}
                 </ScrollView>
               </View>
             </View>
-            <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 20 }}>
-              <Text style={{ fontSize: 24, fontWeight: '700', paddingHorizontal: 20, }}>
-                NEW RELEASES
+            <View style={ styles.categoriesElement }>
+              <Text style={styles.categoriesText}>
+                New releases
               </Text>
-              <View style={{ height: 200, marginTop: 20 }}>
+              <View style={styles.categoriesScroll}>
                 <ScrollView horizontal={true}>
                   <ThumbNail navigation={this.props.navigation} series={ItsAlive1} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={workingHours} callHome={this.getSeries} />
@@ -100,11 +101,11 @@ export default class Home extends React.Component {
                 </ScrollView>
               </View>
             </View>
-            <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 20 }}>
-              <Text style={{ fontSize: 24, fontWeight: '700', paddingHorizontal: 20, }}>
-                POPULAR SHOWS
+            <View style={styles.categoriesElement}>
+              <Text style={styles.categoriesText}>
+                Popular shows
               </Text>
-              <View style={{ height: 200, marginTop: 20 }}>
+              <View style={styles.categoriesScroll}>
                 <ScrollView horizontal={true}>
                   <ThumbNail navigation={this.props.navigation} series={perfectMeatball} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={butBetter} callHome={this.getSeries} />
@@ -112,11 +113,11 @@ export default class Home extends React.Component {
                 </ScrollView>
               </View>
             </View>
-            <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 20 }}>
-              <Text style={{ fontSize: 24, fontWeight: '700', paddingHorizontal: 20, }}>
-                INTERNET PERSONALITIES
+            <View style={styles.categoriesElement}>
+              <Text style={styles.categoriesText}>
+                Internet personalities
               </Text>
-              <View style={{ height: 200, marginTop: 20 }}>
+              <View style={styles.categoriesScroll}>
                 <ScrollView horizontal={true}>
                   <ThumbNail navigation={this.props.navigation} series={HowToWMM} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={ItsAlive1} callHome={this.getSeries} />
@@ -124,11 +125,11 @@ export default class Home extends React.Component {
                 </ScrollView>
               </View>
             </View>
-            <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 20 }}>
-              <Text style={{ fontSize: 24, fontWeight: '700', paddingHorizontal: 20, }}>
-                CLASSICS
+            <View style={styles.categoriesElement}>
+              <Text style={styles.categoriesText}>
+                Classics
               </Text>
-              <View style={{ height: 200, marginTop: 20 }}>
+              <View style={styles.categoriesScroll}>
                 <ScrollView horizontal={true}>
                   <ThumbNail navigation={this.props.navigation} series={JustADash} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={workingHours} callHome={this.getSeries} />

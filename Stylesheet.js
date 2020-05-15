@@ -1,6 +1,7 @@
 const styles = {
   container: {
     flex: 1,
+    justifyContent: 'center',
   },
   button: {
     backgroundColor: 'red',
@@ -21,6 +22,21 @@ const styles = {
     height: '100%',
     width: '100%',
   },
+  categoriesText: {
+    fontSize: 18,
+    fontWeight: '700',
+    paddingHorizontal: 20,
+    fontFamily: 'Avenir',
+  },
+  categoriesElement: {
+    flex: 1,
+    backgroundColor: 'white',
+    paddingTop: 25
+  },
+  categoriesScroll: {
+    height: 200,
+    marginTop: 10
+  }
 };
 
 export {styles};
