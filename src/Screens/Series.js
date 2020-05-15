@@ -12,6 +12,7 @@ import { styles } from '../../Stylesheet';
 import SeriesHeader from '../Components/SeriesHeader';
 //import {JustADash} from '../Backend/JustADash';
 import Episode from '../Components/Episode';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const { height, width } = Dimensions.get('window');
 
@@ -20,21 +21,6 @@ export default class Series extends React.Component {
     super(props);
 
     this.series = this.props.route.params.seriesTitle;
-    this.renderEpisodes = this.renderEpisodes.bind(this);
-  }
-
-  renderEpisodes() {
-    var returnobject = [];
-    for (var i = 0; i < this.series.episode.length; i++) {
-      returnobject.push(
-        <Episode
-          episode={this.series.episode[i]}
-          series={this.series}
-          key={this.series.episode[i].ID}
-        />,
-      );
-    }
-    return returnobject;
   }
 
   componentWillUnmount() {
@@ -44,12 +30,23 @@ export default class Series extends React.Component {
 
   render() {
     return (
-      <ScrollView style={{ paddingLeft: 15, paddingRight: 15 }}>
-        <View>
-          <SeriesHeader series={this.series} />
-          {this.renderEpisodes()}
-        </View>
-      </ScrollView>
+      <SafeAreaView style={{ paddingLeft:15, paddingRight:15, paddingTop:0 }}>
+        <FlatList
+          ListHeaderComponent={() => (<SeriesHeader series={this.series} />)}
+          data={this.series.episode}
+          initialNumToRender={2}
+          maxToRenderPerBatch={2}
+          windowSize={2}
+          keyExtractor={item => item.ID}
+          renderItem={({ item }) => (
+            <Episode
+              episode={item}
+              series={this.series}
+              key={item.ID}
+            />
+          )}
+        />
+      </SafeAreaView>
     );
   }
 }
