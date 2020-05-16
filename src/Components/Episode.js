@@ -43,10 +43,10 @@ export default class Episode extends React.Component {
   renderDescription(descr) {
     const limit = 160;
     if(descr.length < this.state.limit) {
-      return (<Text style={{fontFamily:"Avenir-Medium"}}>{descr}</Text>);
+      return (<Text style={{fontFamily:"Avenir-Medium", color: "white" }}>{descr}</Text>);
     } else {
       return (
-        [<Text style={{fontFamily:"Avenir-Medium"}}>{descr.substring(0, limit)}...</Text>,
+        [<Text style={{fontFamily:"Avenir-Medium", color: "white"}}>{descr.substring(0, limit)}...</Text>,
           <Text onPress={()=> this.onLoadMore()} style={{ fontWeight:'bold', color:'blue' }}>Read More</Text>]
       );
     }
@@ -73,7 +73,7 @@ export default class Episode extends React.Component {
             }
           />
           <View style={{ flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>
-            <Text style={{ fontFamily:"Avenir-Black" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title}</Text>
+            <Text style={{ fontFamily:"Avenir-Black", color: "white" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title}</Text>
           </View>
         </View>
         <View style={{ flexDirection: 'column', paddingTop: 10, paddingBottom: 20 }}>

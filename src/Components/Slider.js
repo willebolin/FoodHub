@@ -24,7 +24,7 @@ const Slider = props => ( //This is a function
             onPress={() =>
                 props.navigation.navigate('Series', { seriesTitle: props.series })
             }>
-            <Image style={styles.SeriesImage} source={props.series.image}/>
+            <Image style={styles.featuredImage} source={props.series.image}/>
         </TouchableOpacity>
     </View>
 )

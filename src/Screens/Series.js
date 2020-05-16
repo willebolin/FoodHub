@@ -30,7 +30,7 @@ export default class Series extends React.Component {
 
   render() {
     return (
-      <SafeAreaView style={{ paddingLeft:15, paddingRight:15, paddingTop:0 }}>
+      <SafeAreaView style={{ paddingLeft:15, paddingRight:15, paddingTop:0, backgroundColor: "#222222" }}>
         <FlatList
           ListHeaderComponent={() => (<SeriesHeader series={this.series} />)}
           data={this.series.episode}

@@ -2,6 +2,8 @@ const styles = {
   container: {
     flex: 1,
     justifyContent: 'center',
+    marginLeft: 10,
+    marginRight: 10,
   },
   button: {
     backgroundColor: 'red',
@@ -13,10 +15,16 @@ const styles = {
     fontSize: 24,
     fontWeight: '700',
     paddingHorizontal: 20,
+    color: "white",
   },
   SeriesImage: {
     width: '100%',
     height: 220,
+  },
+  featuredImage: {
+    width: '100%',
+    height: 220,
+    borderRadius: 10,
   },
   Thumbnail: {
     height: '100%',
@@ -27,10 +35,10 @@ const styles = {
     fontWeight: '700',
     paddingHorizontal: 20,
     fontFamily: 'Avenir',
+    color: "white",
   },
   categoriesElement: {
     flex: 1,
-    backgroundColor: 'white',
     paddingTop: 25
   },
   categoriesScroll: {
