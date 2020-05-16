@@ -16,7 +16,7 @@ import { reverseEngineering } from './ReverseEngineering';
 import AsyncStorage from '@react-native-community/async-storage';
 
 
-var shows = [JustADash, workingHours, ItsAlive1, HowToWMM, perfectMeatball, ButBetter, thanksgivingLeftovers,
+var shows = [JustADash, workingHours, ItsAlive1, HowToWMM, perfectMeatball, ButBetter,
     AndyExplores, gordonramsey, handmade, italianfood, miseEnPlace, ramenSchool, reverseEngineering];
 
 var getShow = function (id) {

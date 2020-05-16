@@ -23,18 +23,18 @@ export default class Home extends React.Component {
             </View>
             <View style={styles.categoriesElement}>
               <Text style={styles.categoriesText}>
-                TITLE GOES HERE
+                Randomly Generated shows
               </Text>
               <View style={styles.categoriesScroll}>
-              <FlatList
+                <FlatList
                   horizontal={true}
-                  data={server.getNewReleases()}
+                  data={server.getRecommended()}
                   initialNumToRender={10}
                   maxToRenderPerBatch={5}
                   windowSize={2}
-                  keyExtractor={item => item.id}
+                  keyExtractor={item => item.id.toString()}
                   renderItem={({ item }) => (
-                    <ThumbNail navigation={this.props.navigation} series={item} callHome={this.getSeries} />
+                    <ThumbNail navigation={this.props.navigation} series={item} />
                   )}
                 />
               </View>
@@ -50,9 +50,9 @@ export default class Home extends React.Component {
                   initialNumToRender={10}
                   maxToRenderPerBatch={5}
                   windowSize={2}
-                  keyExtractor={item => item.id}
+                  keyExtractor={item => item.id.toString()}
                   renderItem={({ item }) => (
-                    <ThumbNail navigation={this.props.navigation} series={item} callHome={this.getSeries} />
+                    <ThumbNail navigation={this.props.navigation} series={item} />
                   )}
                 />
               </View>
@@ -62,15 +62,15 @@ export default class Home extends React.Component {
                 Popular shows
               </Text>
               <View style={styles.categoriesScroll}>
-              <FlatList
+                <FlatList
                   horizontal={true}
                   data={server.getNewReleases()}
                   initialNumToRender={10}
                   maxToRenderPerBatch={5}
                   windowSize={2}
-                  keyExtractor={item => item.id}
+                  keyExtractor={item => item.id.toString()}
                   renderItem={({ item }) => (
-                    <ThumbNail navigation={this.props.navigation} series={item} callHome={this.getSeries} />
+                    <ThumbNail navigation={this.props.navigation} series={item} />
                   )}
                 />
               </View>
@@ -80,15 +80,15 @@ export default class Home extends React.Component {
                 Internet personalities
               </Text>
               <View style={styles.categoriesScroll}>
-              <FlatList
+                <FlatList
                   horizontal={true}
                   data={server.getNewReleases()}
                   initialNumToRender={10}
                   maxToRenderPerBatch={5}
                   windowSize={2}
-                  keyExtractor={item => item.id}
+                  keyExtractor={item => item.id.toString()}
                   renderItem={({ item }) => (
-                    <ThumbNail navigation={this.props.navigation} series={item} callHome={this.getSeries} />
+                    <ThumbNail navigation={this.props.navigation} series={item} />
                   )}
                 />
               </View>
@@ -98,15 +98,15 @@ export default class Home extends React.Component {
                 Classics
               </Text>
               <View style={styles.categoriesScroll}>
-              <FlatList
+                <FlatList
                   horizontal={true}
                   data={server.getNewReleases()}
                   initialNumToRender={10}
                   maxToRenderPerBatch={5}
                   windowSize={2}
-                  keyExtractor={item => item.id}
+                  keyExtractor={item => item.id.toString()}
                   renderItem={({ item }) => (
-                    <ThumbNail navigation={this.props.navigation} series={item} callHome={this.getSeries} />
+                    <ThumbNail navigation={this.props.navigation} series={item} />
                   )}
                 />
               </View>

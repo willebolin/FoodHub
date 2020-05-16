@@ -18,7 +18,7 @@ export default class Series extends React.Component {
   }
 
   componentWillUnmount() {
-    this.props.route.params.callHome();
+    // Potentially put a function here to successfully navigate back home and update shows
     console.log("made it here")
   }
 
@@ -31,7 +31,7 @@ export default class Series extends React.Component {
           initialNumToRender={2}
           maxToRenderPerBatch={2}
           windowSize={2}
-          keyExtractor={item => item.ID}
+          keyExtractor={item => item.ID.toString()}
           renderItem={({ item }) => (
             <Episode
               episode={item}
