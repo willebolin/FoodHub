@@ -6,12 +6,13 @@ import {
   ScrollView,
 } from 'react-native';
 import { JustADash } from '../Backend/JustADash';
-import { workingHours } from '../Backend/workingHours';
+import { workingHours } from '../Backend/WorkingHours';
 import { ItsAlive1 } from '../Backend/ItsAlive1';
 import { HowToWMM } from '../Backend/HowToWMM';
-import { perfectMeatball } from '../Backend/perfectMeatball';
-import { butBetter } from '../Backend/butBetter'
-import { thanksgivingLeftovers } from '../Backend/thanksgivingLeftovers';
+import { perfectMeatball } from '../Backend/PerfectMeatball';
+import { ButBetter } from '../Backend/ButBetter'
+import { thanksgivingLeftovers } from '../Backend/ThanksgivingLeftovers';
+import { server } from '../Backend/Server';
 
 import { SafeAreaView } from 'react-navigation';
 import ThumbNail from '../Components/ThumbNail';
@@ -56,14 +57,14 @@ export default class Home extends React.Component {
   loadKeepWatching() {
     var returnobject = []
     if (this.state.isWatching === "false") {
-      returnobject.push(<ThumbNail navigation={this.props.navigation} series={butBetter} key={123} callHome={this.getSeries} />)
+      returnobject.push(<ThumbNail navigation={this.props.navigation} series={server.getShow(1000)} key={123} callHome={this.getSeries} />)
       returnobject.push(<ThumbNail navigation={this.props.navigation} series={HowToWMM} key={234} callHome={this.getSeries} />)
       returnobject.push(<ThumbNail navigation={this.props.navigation} series={perfectMeatball} key={345} callHome={this.getSeries} />)
       returnobject.push(<ThumbNail navigation={this.props.navigation} series={ItsAlive1} key={456} callHome={this.getSeries} />)
     } else {
       for (var i = 0; i < this.state.startedShows.length; i++) {
         console.log(this.state.startedShows.length)
-        returnobject.push(<ThumbNail navigation={this.props.navigation} series={workingHours} key={456} callHome={this.getSeries} />)
+        returnobject.push(<ThumbNail navigation={this.props.navigation} series={server.getShow(1013)} key={456} callHome={this.getSeries} />)
       }
     }
     return returnobject;
@@ -88,13 +89,13 @@ export default class Home extends React.Component {
                 </ScrollView>
               </View>
             </View>
-            <View style={ styles.categoriesElement }>
+            <View style={styles.categoriesElement}>
               <Text style={styles.categoriesText}>
                 New releases
               </Text>
               <View style={styles.categoriesScroll}>
                 <ScrollView horizontal={true}>
-                  <ThumbNail navigation={this.props.navigation} series={ItsAlive1} callHome={this.getSeries} />
+                  <ThumbNail navigation={this.props.navigation} series={server.getShow(1000)} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={workingHours} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={JustADash} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={HowToWMM} callHome={this.getSeries} />
@@ -108,7 +109,7 @@ export default class Home extends React.Component {
               <View style={styles.categoriesScroll}>
                 <ScrollView horizontal={true}>
                   <ThumbNail navigation={this.props.navigation} series={perfectMeatball} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={butBetter} callHome={this.getSeries} />
+                  <ThumbNail navigation={this.props.navigation} series={ButBetter} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={thanksgivingLeftovers} callHome={this.getSeries} />
                 </ScrollView>
               </View>
@@ -121,7 +122,7 @@ export default class Home extends React.Component {
                 <ScrollView horizontal={true}>
                   <ThumbNail navigation={this.props.navigation} series={HowToWMM} callHome={this.getSeries} />
                   <ThumbNail navigation={this.props.navigation} series={ItsAlive1} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={butBetter} callHome={this.getSeries} />
+                  <ThumbNail navigation={this.props.navigation} series={ButBetter} callHome={this.getSeries} />
                 </ScrollView>
               </View>
             </View>

@@ -78,6 +78,7 @@ var perfectMeatball = {
     'This is a long random paragraph about the Series Just A Dash. This has no real meaning and I am just writing something completely random to test this functionality',
   image: require('../ThumbNails/perfectMeatball.jpg'),
   thumbnail: require('../ThumbNails/perfectMeatballthumbnail.jpg'),
+  id: 1009,
 };
 
 export var perfectMeatball;

@@ -63,13 +63,14 @@ var e8 = {
 };
 
 
-var butBetter = {
+var ButBetter = {
   title: 'At Home but Better',
   episode: [e1, e2, e3, e4, e5, e6, e7, e8],
   description:
     'This is a long random paragraph about the Series Just A Dash. This has no real meaning and I am just writing something completely random to test this functionality',
   image: require('../ThumbNails/butBetter.jpg'),
   thumbnail: require('../ThumbNails/butBetterthumb.jpg'),
+  id: 1001,
 };
 
-export var butBetter;
+export var ButBetter;

@@ -60,7 +60,8 @@ var handmade = {
     episode: [e1, e2, e3, e4, e5, e6, e7],
     description: "Handmade cookware and cuisine phenomena.",
     image: require('../ThumbNails/handmade.jpg'),
-    thumbnail: require('../ThumbNails/handmadethumb.png')
+    thumbnail: require('../ThumbNails/handmadethumb.png'),
+    id: 1003,
 };
 
 export var handmade;

@@ -12,9 +12,9 @@ import {
 import Swiper from 'react-native-swiper';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from '../../Stylesheet';
-import { workingHours } from '../Backend/workingHours';
+import { workingHours } from '../Backend/WorkingHours';
 import {JustADash} from '../Backend/JustADash';
-import { perfectMeatball } from '../Backend/perfectMeatball';
+import { perfectMeatball } from '../Backend/PerfectMeatball';
 
 const{width} = Dimensions.get('window');
 

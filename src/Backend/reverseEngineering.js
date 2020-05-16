@@ -84,7 +84,8 @@ var reverseEngineering = {
     episode: [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10],
     description: "One dish. Two days. We challenge super taster Chris Morocco to blindly taste famous dishes and then reverse engineer them as closely to the originals as he can.",
     image: require('../ThumbNails/reverseEngineering.jpg'),
-    thumbnail: require('../ThumbNails/reverseEngineeringthumb.png')
+    thumbnail: require('../ThumbNails/reverseEngineeringthumb.png'),
+    id: 1011,
 };
 
 export var reverseEngineering;

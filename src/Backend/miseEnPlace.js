@@ -69,7 +69,8 @@ var miseEnPlace = {
     episode: [e1, e2, e3, e4, e5, e6, e7, e8],
     description: "Deep dive in the day-to-day of world famous chefs.",
     image: require('../ThumbNails/miseEnPlace.jpg'),
-    thumbnail: require('../ThumbNails/miseEnPlacethumb.png')
+    thumbnail: require('../ThumbNails/miseEnPlacethumb.png'),
+    id: 1008,
 };
 
 export var miseEnPlace;
