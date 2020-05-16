@@ -30,6 +30,14 @@ const styles = {
     height: '100%',
     width: '100%',
   },
+  thumbnailTitle: {
+    color: "white",
+    fontFamily: "Avenir-Black"
+  },
+  thumbnailSubtitle: {
+    color: "#D3D3D3", 
+    fontFamily: "Avenir",
+  },
   categoriesText: {
     fontSize: 18,
     fontWeight: '700',
@@ -42,7 +50,7 @@ const styles = {
     paddingTop: 25
   },
   categoriesScroll: {
-    height: 200,
+    height: 180,
     marginTop: 10
   }
 };

@@ -37,6 +37,8 @@ function App() {
             headerTintColor: '#fff',
             headerTitleStyle: {
               fontWeight: 'bold',
+              fontFamily: "SavoyeLetPlain",
+              fontSize: 34
             },
           }}
         />
