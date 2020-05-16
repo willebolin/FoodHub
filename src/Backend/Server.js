@@ -13,6 +13,8 @@ import { miseEnPlace } from './MiseEnPlace';
 import { ramenSchool } from './RamenSchool';
 import { reverseEngineering } from './ReverseEngineering';
 
+import AsyncStorage from '@react-native-community/async-storage';
+
 
 var shows = [JustADash, workingHours, ItsAlive1, HowToWMM, perfectMeatball, ButBetter, thanksgivingLeftovers,
     AndyExplores, gordonramsey, handmade, italianfood, miseEnPlace, ramenSchool, reverseEngineering];
@@ -23,7 +25,25 @@ var getShow = function (id) {
             return shows[i];
         }
     }
+};
+
+getAsyncData = async () => {
+    try {
+        const keys = await AsyncStorage.getAllKeys()
+        if (keys.length !== 0) {
+            return "hello";
+        }
+        return keys;
+    } catch (error) {
+        this.setState({ startedShows: 'nothing' })
+        return "hello";
+    }
+};
+
+var getKeepWatching = function () {
+    return [JustADash, JustADash, workingHours]
 }
+
 
 var getRecommended = function () {
     var returnArray = shows;
@@ -34,9 +54,15 @@ var getRecommended = function () {
     return returnArray;
 }
 
+var getNewReleases = function () {
+    return [handmade, ramenSchool, miseEnPlace, reverseEngineering]
+};
+
 var server = {
     getShow: getShow,
     getRecommended: getRecommended,
-}
+    getNewReleases: getNewReleases,
+    getKeepWatching: getKeepWatching,
+};
 
 export var server;

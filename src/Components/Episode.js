@@ -14,7 +14,7 @@ export default class Episode extends React.Component {
     this.loadData = this.loadData.bind(this)
 
     this.state = {
-      limit:160
+      limit: 160
     }
 
   }
@@ -29,7 +29,7 @@ export default class Episode extends React.Component {
   loadData = async () => {
     console.log("writing to memory")
     try {
-      await AsyncStorage.setItem(JSON.stringify(this.props.series.title), 'true')
+      await AsyncStorage.setItem(JSON.stringify(this.props.series.id), 'true')
       console.log(this.props.episode.episode_number)
     } catch (error) {
       console.log(error)
@@ -37,17 +37,17 @@ export default class Episode extends React.Component {
   }
 
   onLoadMore() {
-    this.setState({limit: 800});
+    this.setState({ limit: 800 });
   }
 
   renderDescription(descr) {
     const limit = 160;
-    if(descr.length < this.state.limit) {
-      return (<Text style={{fontFamily:"Avenir-Medium", color: "white" }}>{descr}</Text>);
+    if (descr.length < this.state.limit) {
+      return (<Text style={{ fontFamily: "Avenir-Medium", color: "white" }}>{descr}</Text>);
     } else {
       return (
-        [<Text style={{fontFamily:"Avenir-Medium", color: "white"}}>{descr.substring(0, limit)}...</Text>,
-          <Text onPress={()=> this.onLoadMore()} style={{ fontWeight:'bold', color:'blue' }}>Read More</Text>]
+        [<Text style={{ fontFamily: "Avenir-Medium", color: "white" }}>{descr.substring(0, limit)}...</Text>,
+        <Text onPress={() => this.onLoadMore()} style={{ fontWeight: 'bold', color: 'blue' }}>Read More</Text>]
       );
     }
   }
@@ -73,7 +73,7 @@ export default class Episode extends React.Component {
             }
           />
           <View style={{ flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>
-            <Text style={{ fontFamily:"Avenir-Black", color: "white" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title}</Text>
+            <Text style={{ fontFamily: "Avenir-Black", color: "white" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title}</Text>
           </View>
         </View>
         <View style={{ flexDirection: 'column', paddingTop: 10, paddingBottom: 20 }}>

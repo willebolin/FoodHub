@@ -10,7 +10,7 @@ export default class ThumbNail extends React.Component {
             <View style={{ height: 200, width: 130, marginLeft: 15 }}>
                 <TouchableOpacity
                     onPress={() =>
-                        this.props.navigation.navigate('Series', { seriesTitle: this.props.series, callHome: this.props.callHome })
+                        this.props.navigation.navigate('Series', { seriesTitle: this.props.series })
                     }>
                     <Image
                         source={this.props.series.thumbnail}
