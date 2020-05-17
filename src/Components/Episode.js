@@ -10,20 +10,12 @@ export default class Episode extends React.Component {
   constructor(props) {
     super(props);
 
-    this.isPlaying = this.isPlaying.bind(this)
     this.loadData = this.loadData.bind(this)
 
     this.state = {
       limit: 160
     }
 
-  }
-
-  isPlaying(e) {
-    if (e.isFullscreen) {
-      this.loadData()
-    }
-    console.log('onChangeState', e.isFullscreen)
   }
 
   loadData = async () => {
@@ -69,8 +61,7 @@ export default class Episode extends React.Component {
             onReady={e => console.log('onReady', e.type)}
             onError={e => console.log('onError', e.error)}
             onChangeState={e => console.log('onChangeState', e.state)}
-            onChangeFullscreen={e => this.isPlaying(e)
-            }
+            onChangeFullscreen={e => console.log('onChangeState', e.state)}
           />
           <View style={{ flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>
             <Text style={{ fontFamily: "Avenir-Black", color: "white" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title}</Text>

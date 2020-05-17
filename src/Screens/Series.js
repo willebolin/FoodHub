@@ -1,14 +1,11 @@
 import React from 'react';
 import {
   FlatList,
-  Dimensions,
 } from 'react-native';
 import { styles } from '../../Stylesheet';
 import SeriesHeader from '../Components/SeriesHeader';
 import Episode from '../Components/Episode';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
-const { height, width } = Dimensions.get('window');
 
 export default class Series extends React.Component {
   constructor(props) {
