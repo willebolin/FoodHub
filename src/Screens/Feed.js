@@ -18,7 +18,7 @@ export default class Feed extends React.Component {
       <LinearGradient colors={['#263238', '#37474F', '#455A64', "#546E7A"]} style={styles.linearGradient}>
         <SafeAreaView>
           <View>
-            <ScrollView >
+            <ScrollView>
               <View>
                 <Slide navigation={this.props.navigation} />
               </View>

@@ -24,7 +24,7 @@ export default class MyStuff extends React.Component {
         <SafeAreaView>
           <FlatList
             ListHeaderComponent={() => (<Text style={[styles.categoriesText, { paddingTop: 10, paddingBottom: 15 }]}>Keep Watching</Text>)}
-            data={server.getNewReleases()}
+            data={server.getKeepWatching()}
             initialNumToRender={2}
             maxToRenderPerBatch={2}
             windowSize={2}

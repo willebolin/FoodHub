@@ -60,7 +60,7 @@ export default class Episode extends React.Component {
             style={{ width: '50%', height: 120 }}
             onReady={e => console.log('onReady', e.type)}
             onError={e => console.log('onError', e.error)}
-            onChangeState={e => console.log('onChangeState', e.state)}
+            onChangeState={e => console.log(e)}
             onChangeFullscreen={e => console.log('onChangeState', e.state)}
           />
           <View style={{ flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>

@@ -10,10 +10,12 @@ import Feed from './src/Screens/Feed';
 import MyStuff from './src/Screens/MyStuff';
 import { JustADash } from './src/Backend/JustADash';
 //import { Icon } from 'react-native-elements'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
+/*
 function Home() {
   return (
     <Tab.Navigator
@@ -29,6 +31,40 @@ function Home() {
     </Tab.Navigator>
   );
 }
+*/
+
+
+
+function Home() {
+  return (
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ focused, color, size }) => {
+          let iconName;
+
+          if (route.name === 'Feed') {
+            iconName = focused
+              ? 'ios-information-circle'
+              : 'ios-information-circle-outline';
+          } else if (route.name === 'My Stuff') {
+            iconName = focused ? 'ios-list-box' : 'ios-list';
+          }
+
+          // You can return any component that you like here!
+          return <Ionicons name={iconName} size={size} color={color} />;
+        },
+      })}
+      tabBarOptions={{
+        activeTintColor: 'tomato',
+        inactiveTintColor: 'gray',
+      }}
+    >
+      <Tab.Screen name="Feed" component={Feed} />
+      <Tab.Screen name="My Stuff" component={MyStuff} />
+    </Tab.Navigator>
+  );
+}
+
 
 function App() {
   return (
