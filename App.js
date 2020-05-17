@@ -9,30 +9,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Feed from './src/Screens/Feed';
 import MyStuff from './src/Screens/MyStuff';
 import { JustADash } from './src/Backend/JustADash';
-//import { Icon } from 'react-native-elements'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
-
-/*
-function Home() {
-  return (
-    <Tab.Navigator
-      tabBarOptions={{
-        activeBackgroundColor: "#37474F",
-        inactiveBackgroundColor: "#37474F",
-        activeTintColor: "white",
-        inactiveTintColor: "#546E7A"
-      }}
-    >
-      <Tab.Screen name="Feed" component={Feed} />
-      <Tab.Screen name="My Stuff" component={MyStuff} />
-    </Tab.Navigator>
-  );
-}
-*/
-
 
 
 function Home() {
@@ -42,12 +22,12 @@ function Home() {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
 
-          if (route.name === 'Feed') {
+          if (route.name === 'Discover') {
             iconName = focused
-              ? 'ios-information-circle'
-              : 'ios-information-circle-outline';
+              ? 'ios-home'
+              : 'ios-home';
           } else if (route.name === 'My Stuff') {
-            iconName = focused ? 'ios-list-box' : 'ios-list';
+            iconName = focused ? 'ios-checkbox' : 'ios-checkbox-outline';
           }
 
           // You can return any component that you like here!
@@ -55,11 +35,16 @@ function Home() {
         },
       })}
       tabBarOptions={{
-        activeTintColor: 'tomato',
+        activeTintColor: 'white',
         inactiveTintColor: 'gray',
+        activeBackgroundColor: '#263238',
+        inactiveBackgroundColor: '#263238',
+        style: {
+          backgroundColor: '#263238',
+        },
       }}
     >
-      <Tab.Screen name="Feed" component={Feed} />
+      <Tab.Screen name="Discover" component={Feed} />
       <Tab.Screen name="My Stuff" component={MyStuff} />
     </Tab.Navigator>
   );
@@ -76,7 +61,7 @@ function App() {
           options={{
             title: 'FoodHub', //ICON HERE
             headerStyle: {
-              backgroundColor: '#263238',
+              backgroundColor: '#455A64',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
