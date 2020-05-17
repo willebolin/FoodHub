@@ -62,7 +62,10 @@ const styles = {
   categoriesScroll: {
     height: 180,
     marginTop: 10
-  }
+  },
+  linearGradient: {
+    flex: 1,
+  },
 };
 
 export {styles};

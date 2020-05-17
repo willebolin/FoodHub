@@ -6,6 +6,8 @@ import { styles } from '../../Stylesheet';
 import SeriesHeader from '../Components/SeriesHeader';
 import Episode from '../Components/Episode';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import LinearGradient from 'react-native-linear-gradient';
+
 
 export default class Series extends React.Component {
   constructor(props) {
@@ -19,9 +21,10 @@ export default class Series extends React.Component {
     console.log("made it here")
   }
 
-  render() {
-    return (
-      <SafeAreaView style={{ paddingLeft: 15, paddingRight: 15, paddingTop: 0, backgroundColor: "#222222" }}>
+render() {
+  return (
+    <LinearGradient colors={['#444444', '#333333', '#222222']} style={styles.linearGradient}>
+      <SafeAreaView style={{ paddingLeft: 15, paddingRight: 15, paddingTop: 0}}>
         <FlatList
           ListHeaderComponent={() => (<SeriesHeader series={this.series} />)}
           data={this.series.episode}
@@ -38,6 +41,7 @@ export default class Series extends React.Component {
           )}
         />
       </SafeAreaView>
-    );
-  }
+    </LinearGradient>
+  );
+}
 }
