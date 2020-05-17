@@ -1,10 +1,8 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-import { styles } from '../../Stylesheet';
 import YouTubePlayer from 'react-native-youtube-sdk';
 import { SafeAreaView } from 'react-navigation';
 import AsyncStorage from '@react-native-community/async-storage';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default class Episode extends React.Component {
   constructor(props) {
@@ -18,13 +16,21 @@ export default class Episode extends React.Component {
 
   }
 
-  loadData = async () => {
-    console.log("writing to memory")
-    try {
-      await AsyncStorage.setItem(JSON.stringify(this.props.series.id), 'true')
-      console.log(this.props.episode.episode_number)
-    } catch (error) {
-      console.log(error)
+  loadData = async (e) => {
+    console.log(e.state)
+    if (e.state === "PLAYING") {
+      console.log("writing to memory")
+      try {
+        console.log(this.props.episode.ID)
+        console.log(this.props.series.id)
+        await AsyncStorage.setItem(JSON.stringify(this.props.series.id), 'true')
+        await AsyncStorage.setItem(JSON.stringify(this.props.episode.ID), 'true')
+        console.log(this.props.episode.episode_number)
+      } catch (error) {
+        console.log(error)
+      }
+    } else {
+      return
     }
   }
 
@@ -60,8 +66,8 @@ export default class Episode extends React.Component {
             style={{ width: '50%', height: 120 }}
             onReady={e => console.log('onReady', e.type)}
             onError={e => console.log('onError', e.error)}
-            onChangeState={e => console.log('onChangeState', e.state)}
-            onChangeFullscreen={e => console.log('onChangeState', e.state)}
+            onChangeState={e => this.loadData(e)}
+            onChangeFullscreen={e => console.log('fullscreen', e.state)}
           />
           <View style={{ flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>
             <Text style={{ fontFamily: "Avenir-Black", color: "white" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title}</Text>
