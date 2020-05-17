@@ -19,29 +19,35 @@ import AsyncStorage from '@react-native-community/async-storage';
 var shows = [JustADash, workingHours, ItsAlive1, HowToWMM, perfectMeatball, ButBetter,
     AndyExplores, gordonramsey, handmade, italianfood, miseEnPlace, ramenSchool, reverseEngineering];
 
+var activeShows = []
+
 var getShow = function (id) {
     for (var i = 0; i < shows.length; i++) {
         if (shows[i].id === id) {
             return shows[i];
         }
     }
+    return null;
 };
 
 getAsyncData = async () => {
+    console.log("getting data")
     try {
         const keys = await AsyncStorage.getAllKeys()
-        if (keys.length !== 0) {
-            return "hello";
+        activeShows = keys
+        console.log(activeShows)
+        if (keys.length === 0) {
         }
-        return keys;
     } catch (error) {
-        this.setState({ startedShows: 'nothing' })
-        return "hello";
+        console.log('error');
     }
 };
 
-var getKeepWatching = function () {
-    return [JustADash, JustADash, workingHours]
+getKeepWatching = function () {
+    var activeShows = getAsyncData()
+    
+    console.log(activeShows, 'here');
+    return [AndyExplores];
 }
 
 
@@ -58,11 +64,28 @@ var getNewReleases = function () {
     return [handmade, ramenSchool, miseEnPlace, reverseEngineering]
 };
 
+var getCreators = function () {
+    return [ButBetter, ramenSchool, perfectMeatball]
+}
+
+var getReality = function () {
+    return [workingHours, AndyExplores, miseEnPlace, handmade, reverseEngineering]
+}
+
+var getHowTo = function () {
+    return [JustADash, ItsAlive1, HowToWMM, perfectMeatball, ButBetter, gordonramsey, ramenSchool, italianfood]
+}
+
+
 var server = {
     getShow: getShow,
     getRecommended: getRecommended,
     getNewReleases: getNewReleases,
     getKeepWatching: getKeepWatching,
+    getNewReleases: getNewReleases,
+    getCreators: getCreators,
+    getReality: getReality,
+    getHowTo: getHowTo
 };
 
 export var server;

@@ -18,30 +18,29 @@ export default class Series extends React.Component {
 
   componentWillUnmount() {
     // Potentially put a function here to successfully navigate back home and update shows
-    console.log("made it here")
   }
 
-render() {
-  return (
-    <LinearGradient colors={['#444444', '#333333', '#222222']} style={styles.linearGradient}>
-      <SafeAreaView style={{ paddingLeft: 15, paddingRight: 15, paddingTop: 0}}>
-        <FlatList
-          ListHeaderComponent={() => (<SeriesHeader series={this.series} />)}
-          data={this.series.episode}
-          initialNumToRender={2}
-          maxToRenderPerBatch={2}
-          windowSize={2}
-          keyExtractor={item => item.ID.toString()}
-          renderItem={({ item }) => (
-            <Episode
-              episode={item}
-              series={this.series}
-              key={item.ID}
-            />
-          )}
-        />
-      </SafeAreaView>
-    </LinearGradient>
-  );
-}
+  render() {
+    return (
+      <LinearGradient colors={['#444444', '#333333', '#222222']} style={styles.linearGradient}>
+        <SafeAreaView style={{ paddingLeft: 15, paddingRight: 15, paddingTop: 0 }}>
+          <FlatList
+            ListHeaderComponent={() => (<SeriesHeader series={this.series} />)}
+            data={this.series.episode}
+            initialNumToRender={2}
+            maxToRenderPerBatch={2}
+            windowSize={2}
+            keyExtractor={item => item.ID.toString()}
+            renderItem={({ item }) => (
+              <Episode
+                episode={item}
+                series={this.series}
+                key={item.ID}
+              />
+            )}
+          />
+        </SafeAreaView>
+      </LinearGradient>
+    );
+  }
 }
