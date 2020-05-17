@@ -4,6 +4,7 @@ import {
   View,
   Text,
   ScrollView,
+  FlatList,
 } from 'react-native';
 import { JustADash } from '../Backend/JustADash';
 import { workingHours } from '../Backend/WorkingHours';
@@ -17,11 +18,12 @@ import { server } from '../Backend/Server';
 import { SafeAreaView } from 'react-navigation';
 import ThumbNail from '../Components/ThumbNail';
 import Slide from '../Components/Slider';
+import MySeries from '../Components/MySeries';
 import AsyncStorage from '@react-native-community/async-storage';
 import { styles } from '../../Stylesheet';
 
 
-export default class Home extends React.Component {
+export default class MyStuff extends React.Component {
   constructor(props) {
     super(props);
     this.getSeries();
@@ -73,73 +75,21 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <SafeAreaView>
-        <View>
-          <ScrollView style={{ backgroundColor: "#222222" }}>
-            <View>
-              <Slide navigation={this.props.navigation} />
-            </View>
-            <View style={styles.categoriesElement}>
-              <Text style={styles.categoriesText}>
-                {this.state.rubric}
-              </Text>
-              <View style={styles.categoriesScroll}>
-                <ScrollView horizontal={true}>
-                  {this.loadKeepWatching()}
-                </ScrollView>
-              </View>
-            </View>
-            <View style={styles.categoriesElement}>
-              <Text style={styles.categoriesText}>
-                New releases
-              </Text>
-              <View style={styles.categoriesScroll}>
-                <ScrollView horizontal={true}>
-                  <ThumbNail navigation={this.props.navigation} series={server.getShow(1000)} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={workingHours} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={JustADash} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={HowToWMM} callHome={this.getSeries} />
-                </ScrollView>
-              </View>
-            </View>
-            <View style={styles.categoriesElement}>
-              <Text style={styles.categoriesText}>
-                Popular shows
-              </Text>
-              <View style={styles.categoriesScroll}>
-                <ScrollView horizontal={true}>
-                  <ThumbNail navigation={this.props.navigation} series={perfectMeatball} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={ButBetter} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={thanksgivingLeftovers} callHome={this.getSeries} />
-                </ScrollView>
-              </View>
-            </View>
-            <View style={styles.categoriesElement}>
-              <Text style={styles.categoriesText}>
-                Internet personalities
-              </Text>
-              <View style={styles.categoriesScroll}>
-                <ScrollView horizontal={true}>
-                  <ThumbNail navigation={this.props.navigation} series={HowToWMM} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={ItsAlive1} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={ButBetter} callHome={this.getSeries} />
-                </ScrollView>
-              </View>
-            </View>
-            <View style={styles.categoriesElement}>
-              <Text style={styles.categoriesText}>
-                Classics
-              </Text>
-              <View style={styles.categoriesScroll}>
-                <ScrollView horizontal={true}>
-                  <ThumbNail navigation={this.props.navigation} series={JustADash} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={workingHours} callHome={this.getSeries} />
-                  <ThumbNail navigation={this.props.navigation} series={thanksgivingLeftovers} callHome={this.getSeries} />
-                </ScrollView>
-              </View>
-            </View>
-          </ScrollView>
-        </View>
+      <SafeAreaView style={{backgroundColor: "#222222"}}>
+        <FlatList
+          ListHeaderComponent={() => (<Text style={[styles.categoriesText, {paddingTop: 10, paddingBottom:15}]}>Keep Watching</Text>)}
+          data={server.getNewReleases()}
+          initialNumToRender={2}
+          maxToRenderPerBatch={2}
+          windowSize={2}
+          keyExtractor={item => item.id.toString()}
+          renderItem={({ item }) => (
+            <MySeries
+              navigation={this.props.navigation}
+              series={item}
+            />
+          )}
+        />
       </SafeAreaView>
     );
   }

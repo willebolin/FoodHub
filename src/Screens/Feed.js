@@ -7,7 +7,7 @@ import { styles } from '../../Stylesheet';
 import { server } from '../Backend/Server';
 
 
-export default class Home extends React.Component {
+export default class Feed extends React.Component {
   constructor(props) {
     super(props);
 

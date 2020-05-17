@@ -5,6 +5,12 @@ const styles = {
     marginLeft: 10,
     marginRight: 10,
   },
+  containerMySeries: {
+    flex: 1,
+    justifyContent: 'center',
+    marginLeft: 20,
+    marginRight: 20,
+  },
   button: {
     backgroundColor: 'red',
     margin: 12,
@@ -18,6 +24,10 @@ const styles = {
     color: "white",
   },
   SeriesImage: {
+    width: '100%',
+    height: 180,
+  },
+  myStuffImage: {
     width: '100%',
     height: 220,
   },
