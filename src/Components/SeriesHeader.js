@@ -16,8 +16,6 @@ export default class SeriesHeader extends React.Component {
       <View>
         <Image
           style={styles.SeriesImage}
-          //source={require('../ThumbNails/JustADash.png')}
-          //source={require(JSON.stringify(this.props.series.image))}
           source={this.props.series.image}
         />
         <Text style={{ paddingBottom: 20, fontFamily:"Avenir-Medium", color: "white" }}>{this.props.series.description}</Text>

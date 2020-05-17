@@ -5,7 +5,7 @@ import Slide from '../Components/Slider';
 import { server } from '../Backend/Server';
 import Category from '../Components/Category';
 
-export default class Home extends React.Component {
+export default class Feed extends React.Component {
   constructor(props) {
     super(props);
 
