@@ -61,7 +61,7 @@ function App() {
           options={{
             title: 'FoodHub', //ICON HERE
             headerStyle: {
-              backgroundColor: '#455A64',
+              backgroundColor: '#37474F',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {

@@ -19,7 +19,7 @@ export default class Feed extends React.Component {
 
   render() {
     return (
-      <LinearGradient colors={['#455A64', '#37474F', '#263238' ]} style={styles.linearGradient}>
+      <LinearGradient colors={['#37474F', '#263238', '#263238' ]} style={styles.linearGradient}>
         <SafeAreaView>
           <View>
             <ScrollView>

@@ -23,7 +23,7 @@ export default class MyStuff extends React.Component {
 
   render() {
     return (
-      <LinearGradient colors={['#455A64', '#37474F', '#263238']} style={styles.linearGradient}>
+      <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>
         <SafeAreaView>
           <FlatList
             ListHeaderComponent={() => (<Text style={[styles.categoriesText, { paddingTop: 10, paddingBottom: 15 }]}>Keep Watching</Text>)}
