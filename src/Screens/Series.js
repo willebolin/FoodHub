@@ -22,7 +22,7 @@ export default class Series extends React.Component {
 
   render() {
     return (
-      <LinearGradient colors={['#444444', '#333333', '#222222']} style={styles.linearGradient}>
+      <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>
         <SafeAreaView style={{ paddingLeft: 15, paddingRight: 15, paddingTop: 0 }}>
           <FlatList
             ListHeaderComponent={() => (<SeriesHeader series={this.series} />)}

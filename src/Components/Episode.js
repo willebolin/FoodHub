@@ -45,7 +45,7 @@ export default class Episode extends React.Component {
     } else {
       return (
         [<Text style={{ fontFamily: "Avenir-Medium", color: "white" }}>{descr.substring(0, limit)}...</Text>,
-        <Text onPress={() => this.onLoadMore()} style={{ fontWeight: 'bold', color: 'blue' }}>Read More</Text>]
+        <Text onPress={() => this.onLoadMore()} style={{ fontFamily: "Avenir-Black", fontWeight: 'bold', color: '#90A4AE' }}>Read More</Text>]
       );
     }
   }

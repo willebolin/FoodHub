@@ -78,7 +78,7 @@ function App() {
             title: route.params.seriesTitle.title,
             headerBackTitle: " ",
             headerStyle: {
-              backgroundColor: '#444444',
+              backgroundColor: '#37474F',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
