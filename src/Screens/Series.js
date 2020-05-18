@@ -7,6 +7,7 @@ import SeriesHeader from '../Components/SeriesHeader';
 import Episode from '../Components/Episode';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import LinearGradient from 'react-native-linear-gradient';
+import { server } from '../Backend/Server';
 
 
 export default class Series extends React.Component {
@@ -17,7 +18,7 @@ export default class Series extends React.Component {
   }
 
   componentWillUnmount() {
-    // Potentially put a function here to successfully navigate back home and update shows
+    server.getData()
   }
 
   render() {

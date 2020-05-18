@@ -6,6 +6,7 @@ import { server } from '../Backend/Server';
 import Category from '../Components/Category';
 import LinearGradient from 'react-native-linear-gradient';
 import { styles } from '../../Stylesheet';
+import AsyncStorage from '@react-native-community/async-storage';
 
 export default class Feed extends React.Component {
   constructor(props) {
@@ -17,9 +18,10 @@ export default class Feed extends React.Component {
         <LinearGradient colors={['#263238', '#37474F', '#455A64', "#546E7A"]} style={styles.linearGradient}>
   */
 
+
   render() {
     return (
-      <LinearGradient colors={['#37474F', '#263238', '#263238' ]} style={styles.linearGradient}>
+      <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>
         <SafeAreaView>
           <View>
             <ScrollView>

@@ -4,22 +4,31 @@ import {
   FlatList,
 } from 'react-native';
 import { server } from '../Backend/Server';
-
-import { SafeAreaView } from 'react-navigation';
+import { SafeAreaView, NavigationEvents, NavigationContainer } from 'react-navigation';
 import MySeries from '../Components/MySeries';
 import LinearGradient from 'react-native-linear-gradient';
 import { styles } from '../../Stylesheet';
+import { useIsFocused } from '@react-navigation/native';
 
 
 export default class MyStuff extends React.Component {
-  constructor(props) {
-    super(props);
+  willFocus = this.props.navigation.addListener(
+    'willFocus',
+    payload => {
+      this.forceUpdate();
+    }
+  );
 
-  }
+
 
   /*
         <LinearGradient colors={['#263238', '#37474F', '#455A64', "#546E7A"]} style={styles.linearGradient}>
   */
+
+  componentDidMount() {
+    console.log("updated Mystuff")
+  }
+
 
   render() {
     return (

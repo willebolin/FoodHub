@@ -19,40 +19,40 @@ import AsyncStorage from '@react-native-community/async-storage';
 var shows = [JustADash, workingHours, ItsAlive1, HowToWMM, perfectMeatball, ButBetter,
     AndyExplores, gordonramsey, handmade, italianfood, miseEnPlace, ramenSchool, reverseEngineering];
 
-var activeShows = []
+var activity = []
 
 var getShow = function (id) {
     for (var i = 0; i < shows.length; i++) {
-        if (shows[i].id === id) {
+        if (shows[i].id.toString() === id.toString()) {
             return shows[i];
         }
     }
     return null;
 };
 
-getAsyncData = async () => {
+getData = async () => {
     console.log("getting data")
     try {
         const keys = await AsyncStorage.getAllKeys()
-        activeShows = keys
-        console.log(activeShows)
-        if (keys.length === 0) {
-        }
+        activity = keys
     } catch (error) {
         console.log('error');
     }
 };
 
-getKeepWatching = function () {
-    var activeShows = getAsyncData()
-    
-    console.log(activeShows, 'here');
-    return [AndyExplores];
+var getKeepWatching = function () {
+    activeShows = []
+    activity.forEach((element) => {
+        var show = getShow(element)
+        if (show !== null) {
+            activeShows.push(show)
+        }
+    })
+    return activeShows;
 }
 
-
 var getRecommended = function () {
-    var returnArray = shows;
+    var returnArray = Object.create(shows);
     while (returnArray.length > 5) {
         var index = Math.floor(Math.random() * (returnArray.length + 1));
         returnArray.splice(index, 1);
@@ -85,7 +85,8 @@ var server = {
     getNewReleases: getNewReleases,
     getCreators: getCreators,
     getReality: getReality,
-    getHowTo: getHowTo
+    getHowTo: getHowTo,
+    getData: getData,
 };
 
 export var server;
