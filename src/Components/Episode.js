@@ -44,8 +44,8 @@ export default class Episode extends React.Component {
       return (<Text style={{ fontFamily: "Avenir-Medium", color: "white" }}>{descr}</Text>);
     } else {
       return (
-        [<Text style={{ fontFamily: "Avenir-Medium", color: "white" }}>{descr.substring(0, limit)}...</Text>,
-        <Text onPress={() => this.onLoadMore()} style={{ fontFamily: "Avenir-Black", fontWeight: 'bold', color: '#90A4AE' }}>Read More</Text>]
+        [<Text key={this.props.episode.ID} style={{ fontFamily: "Avenir-Medium", color: "white" }}>{descr.substring(0, limit)}...</Text>,
+        <Text key={this.props.episode.episode_title} onPress={() => this.onLoadMore()} style={{ fontFamily: "Avenir-Black", fontWeight: 'bold', color: '#90A4AE' }}>Read More</Text>]
       );
     }
   }
