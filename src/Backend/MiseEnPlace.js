@@ -68,7 +68,7 @@ var miseEnPlace = {
     title: 'Mise en Place',
     episode: [e1, e2, e3, e4, e5, e6, e7, e8],
     description: "Deep dive in the day-to-day of world famous chefs.",
-    image: require('../ThumbNails/miseEnPlace.jpg'),
+    image: require('../ThumbNails/miseEnPlace2.png'),
     thumbnail: require('../ThumbNails/miseEnPlacethumb.png'),
     id: 1008,
 };
