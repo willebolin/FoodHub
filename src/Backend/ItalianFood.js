@@ -44,7 +44,7 @@ var italianfood = {
     episode: [e1, e2, e3, e4, e5],
     description: 'This serie is for those who want to learn the basics of italian food',
     image: require('../ThumbNails/jamieoliver.jpg'),
-    thumbnail:  require('../ThumbNails/jamieoliver.jpg'),
+    thumbnail:  require('../ThumbNails/jamieoliverthumb.png'),
     id: 1005,
 };
 
