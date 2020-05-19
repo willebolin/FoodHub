@@ -66,6 +66,7 @@ target 'FoodHub' do
   pod 'React-Core/RCTWebSocket', :path => '../node_modules/react-native/'
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'Flurry-iOS-SDK/FlurrySDK' #Analytics Pod
 
   pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact'
   pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'

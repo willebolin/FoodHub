@@ -35,8 +35,8 @@ var AndyExplores = {
     title: 'Andy Explores',
     episode: [e1, e2, e3, e4],
     description: "Andy Baraghani is inquisitive without being condescending. He's knowledgeable and doesn't talk over the experts. He's down to try anything without making faces at food he's unfamiliar with.",
-    image: require('../ThumbNails/andyExplores2.jpg'),
-    thumbnail: require('../ThumbNails/andyExploresthumb.png'),
+    image: require('../ThumbNails/andyExplores.jpeg'),
+    thumbnail: require('../ThumbNails/andyExploresthumb.jpeg'),
     id: 1000
 };
 

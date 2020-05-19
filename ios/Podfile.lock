@@ -59,6 +59,9 @@ PODS:
   - FlipperKit/SKIOSNetworkPlugin (0.33.1):
     - FlipperKit/Core
     - FlipperKit/FlipperKitNetworkPlugin
+  - Flurry-iOS-SDK/FlurryConfig (10.3.1):
+    - Flurry-iOS-SDK/FlurrySDK
+  - Flurry-iOS-SDK/FlurrySDK (10.3.1)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -238,6 +241,12 @@ PODS:
     - React-cxxreact (= 0.62.2)
     - React-jsi (= 0.62.2)
   - React-jsinspector (0.62.2)
+  - react-native-flurry-sdk (5.5.0):
+    - react-native-flurry-sdk/FlurrySDK (= 5.5.0)
+  - react-native-flurry-sdk/FlurrySDK (5.5.0):
+    - Flurry-iOS-SDK/FlurryConfig (~> 10.3.1)
+    - Flurry-iOS-SDK/FlurrySDK (~> 10.3.1)
+    - React
   - react-native-safe-area-context (0.7.3):
     - React
   - react-native-webview (9.4.0):
@@ -346,6 +355,7 @@ DEPENDENCIES:
   - FlipperKit/FlipperKitReactPlugin (~> 0.33.1)
   - FlipperKit/FlipperKitUserDefaultsPlugin (~> 0.33.1)
   - FlipperKit/SKIOSNetworkPlugin (~> 0.33.1)
+  - Flurry-iOS-SDK/FlurrySDK
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -360,6 +370,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-flurry-sdk (from `../node_modules/react-native-flurry-sdk/ios`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-webview (from `../node_modules/react-native-webview`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -394,6 +405,7 @@ SPEC REPOS:
     - Flipper-PeerTalk
     - Flipper-RSocket
     - FlipperKit
+    - Flurry-iOS-SDK
     - OpenSSL-Universal
     - YogaKit
     - YoutubePlayer-in-WKWebView
@@ -432,6 +444,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-flurry-sdk:
+    :path: "../node_modules/react-native-flurry-sdk/ios"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-webview:
@@ -488,6 +502,7 @@ SPEC CHECKSUMS:
   Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
   Flipper-RSocket: 64e7431a55835eb953b0bf984ef3b90ae9fdddd7
   FlipperKit: 6dc9b8f4ef60d9e5ded7f0264db299c91f18832e
+  Flurry-iOS-SDK: 2cc5b4f494db71d90a8bd195ba7ebb7cdebf3535
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
   OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
@@ -501,6 +516,7 @@ SPEC CHECKSUMS:
   React-jsi: b6dc94a6a12ff98e8877287a0b7620d365201161
   React-jsiexecutor: 1540d1c01bb493ae3124ed83351b1b6a155db7da
   React-jsinspector: 512e560d0e985d0e8c479a54a4e5c147a9c83493
+  react-native-flurry-sdk: 35f431ee8dcd0ca8a310c758d0b1430589674b34
   react-native-safe-area-context: 8260e5157617df4b72865f44006797f895b2ada7
   react-native-webview: 0e2881d2e3e72ad52a82445c1a116c43205fd471
   React-RCTActionSheet: f41ea8a811aac770e0cc6e0ad6b270c644ea8b7c
@@ -525,6 +541,6 @@ SPEC CHECKSUMS:
   YoutubePlayerView: 3870fc10f2db3f54156697757f44d304203bdc7e
   YouTubeSdk: 5227d8076bcc3f4209f506414a09ea769e7658c9
 
-PODFILE CHECKSUM: 86f12bb07cb5d89a37b5308f9e55de4a08683c36
+PODFILE CHECKSUM: 3e30e9aa63523ab6c5284c0ace6afeb01b017a92
 
 COCOAPODS: 1.9.1

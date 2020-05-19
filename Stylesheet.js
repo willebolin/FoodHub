@@ -27,7 +27,7 @@ const styles = {
   },
   SeriesImage: {
     width: '100%',
-    height: 180,
+    height: 220,
   },
   myStuffImage: {
     width: '100%',
