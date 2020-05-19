@@ -66,6 +66,30 @@ const styles = {
   linearGradient: {
     flex: 1,
   },
+  episodeTitleUnwatched: {
+    fontFamily: "Avenir-Black", 
+    color: "white"
+  },
+  episodeTitleWatched: {
+    fontFamily: "Avenir-Black", 
+    color: "#546E7A"
+  },
+  episodeDescriptionUnwatched: {
+    fontFamily: "Avenir-Medium", 
+    color: "white"
+  },
+  episodeDescriptionWatched: {
+    fontFamily: "Avenir-Medium", 
+    color: "#546E7A"
+  },
+  watchedText: {
+    marginTop: 20,
+    marginRight: 10,
+    justifyContent: "flex-start",
+    backgroundColor: "rgba(144,164,174,0.2)",
+    alignSelf: 'flex-end',
+    color: "#546E7A"
+  }
 };
 
 export {styles};

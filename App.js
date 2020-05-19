@@ -24,7 +24,7 @@ function Home() {
             iconName = focused
               ? 'ios-home'
               : 'ios-home';
-          } else if (route.name === 'My Stuff') {
+          } else if (route.name === 'Keep Watching') {
             iconName = focused ? 'ios-checkbox' : 'ios-checkbox-outline';
           }
 
@@ -43,7 +43,7 @@ function Home() {
       }}
     >
       <Tab.Screen name="Discover" component={Feed} />
-      <Tab.Screen name="My Stuff" component={MyStuff} listeners={{
+      <Tab.Screen name="Keep Watching" component={MyStuff} listeners={{
         tabPress: console.log('pressed nav bar')
       }} />
     </Tab.Navigator>
@@ -64,12 +64,13 @@ class App extends React.Component {
               title: 'FoodHub', //ICON HERE
               headerStyle: {
                 backgroundColor: '#37474F',
+                shadowOpacity: 0,
               },
               headerTintColor: '#fff',
               headerTitleStyle: {
                 fontWeight: 'bold',
-                fontFamily: "SavoyeLetPlain",
-                fontSize: 34
+                fontFamily: "Avenir",
+                fontSize: 24
               },
             }}
           />
@@ -81,10 +82,12 @@ class App extends React.Component {
               headerBackTitle: " ",
               headerStyle: {
                 backgroundColor: '#37474F',
+                shadowOpacity: 0,
               },
               headerTintColor: '#fff',
               headerTitleStyle: {
                 fontWeight: 'bold',
+                fontFamily: "Avenir"
               },
             })}
           />
