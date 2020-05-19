@@ -1,3 +1,5 @@
+import { StyleSheet } from 'react-native';
+
 const styles = {
   container: {
     flex: 1,
@@ -89,6 +91,11 @@ const styles = {
     backgroundColor: "rgba(144,164,174,0.2)",
     alignSelf: 'flex-end',
     color: "#546E7A"
+  },
+  videoWatched: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    width: "50%" ,
   }
 };
 
