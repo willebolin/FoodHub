@@ -43,9 +43,7 @@ function Home() {
       }}
     >
       <Tab.Screen name="Discover" component={Feed} />
-      <Tab.Screen name="Keep Watching" component={MyStuff} listeners={{
-        tabPress: console.log('pressed nav bar')
-      }} />
+      <Tab.Screen name="Keep Watching" component={MyStuff} />
     </Tab.Navigator>
   );
 }

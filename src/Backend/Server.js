@@ -22,11 +22,12 @@ var shows = [JustADash, workingHours, ItsAlive1, HowToWMM, perfectMeatball, ButB
 var activity = []
 
 var hasWatched = function (ID) {
-    activity.forEach((element) => {
-        if (element === ID.toString()) {
+    for (var i = 0; i < activity.length; i++) {
+        var temp = '"' + ID + '"'
+        if (activity[i] === temp) {
             return true;
         }
-    })
+    }
     return false;
 };
 
