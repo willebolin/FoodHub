@@ -27,9 +27,8 @@ export default class Episode extends React.Component {
         console.log("writing to memory")
         await AsyncStorage.setItem(JSON.stringify(this.props.series.id), 'true')
         await AsyncStorage.setItem(JSON.stringify(this.props.episode.ID), 'true')
-        console.log(this.props.episode.episode_number)
         server.getData()
-        this.setState({ watched: 'watched' })
+        this.setState({ watched: true })
       } catch (error) {
         console.log(error)
       }
@@ -49,11 +48,11 @@ export default class Episode extends React.Component {
   renderDescription(descr) {
     const limit = 160;
     if (descr.length < this.state.limit) {
-      if(this.state.limit == 160){
+      if (this.state.limit == 160) {
         return (<Text style={this.isWatched() ? styles.episodeDescriptionWatched : styles.episodeDescriptionUnwatched}>{descr}</Text>);
-      } else if(this.state.limit == 800) {
+      } else if (this.state.limit == 800) {
         return (
-          [<Text key={this.props.episode.ID} style={this.isWatched() ? styles.episodeDescriptionWatched : styles.episodeDescriptionUnwatched}>{descr}...</Text>,
+          [<Text key={this.props.episode.ID} style={this.isWatched() ? styles.episodeDescriptionWatched : styles.episodeDescriptionUnwatched}>{descr}</Text>,
           <Text key={this.props.episode.episode_title} onPress={() => this.onLoadLess()} style={{ fontFamily: "Avenir-Black", fontWeight: 'bold', color: '#90A4AE' }}>Show Less</Text>]
         );
       }
@@ -66,7 +65,18 @@ export default class Episode extends React.Component {
   }
 
   isWatched() {
-    return false;
+    return this.state.watched;
+  }
+
+  componentDidMount() {
+    if (this.state.watched === false) {
+      if (server.hasWatched(this.props.episode.ID) === true) {
+        console.log('setting state')
+        this.setState({
+          watched: true
+        })
+      }
+    }
   }
 
   render() {
@@ -90,10 +100,8 @@ export default class Episode extends React.Component {
           />
           <View style={{ flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>
             <Text numberOfLines={4} style={this.isWatched() ? styles.episodeTitleWatched : styles.episodeTitleUnwatched}>{this.props.episode.episode_number}. {this.props.episode.episode_title} </Text>
-            <Text
-              style={styles.watchedText}
-            >
-              {this.isWatched() ? "Watched" : ""}  
+            <Text style={styles.watchedText} >
+              {this.isWatched() ? "Watched" : ""}
             </Text>
           </View>
         </View>
