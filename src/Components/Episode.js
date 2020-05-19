@@ -9,9 +9,11 @@ export default class Episode extends React.Component {
     super(props);
 
     this.loadData = this.loadData.bind(this)
+    this.isWatched = this.isWatched.bind(this)
 
     this.state = {
-      limit: 160
+      limit: 160,
+      watched: false,
     }
 
   }
@@ -19,13 +21,12 @@ export default class Episode extends React.Component {
   loadData = async (e) => {
     console.log(e.state)
     if (e.state === "PLAYING") {
-      console.log("writing to memory")
       try {
-        console.log(this.props.episode.ID)
-        console.log(this.props.series.id)
+        console.log("writing to memory")
         await AsyncStorage.setItem(JSON.stringify(this.props.series.id), 'true')
         await AsyncStorage.setItem(JSON.stringify(this.props.episode.ID), 'true')
         console.log(this.props.episode.episode_number)
+        this.setState = { watched: true }
       } catch (error) {
         console.log(error)
       }
@@ -50,6 +51,10 @@ export default class Episode extends React.Component {
     }
   }
 
+  isWatched() {
+    //do something here that tracks have watched 
+  }
+
   render() {
     return (
       <SafeAreaView style={{ flex: 1 }}>
@@ -70,7 +75,7 @@ export default class Episode extends React.Component {
             onChangeFullscreen={e => console.log('fullscreen', e.state)}
           />
           <View style={{ flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>
-            <Text style={{ fontFamily: "Avenir-Black", color: "white" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title}</Text>
+            <Text style={{ fontFamily: "Avenir-Black", color: "white" }}>{this.props.episode.episode_number}. {this.props.episode.episode_title} </Text>
           </View>
         </View>
         <View style={{ flexDirection: 'column', paddingTop: 10, paddingBottom: 20 }}>

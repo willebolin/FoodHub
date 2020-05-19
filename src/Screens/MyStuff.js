@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Text,
   FlatList,
+  View
 } from 'react-native';
 import { server } from '../Backend/Server';
 import { SafeAreaView, NavigationEvents, NavigationContainer } from 'react-navigation';
@@ -34,6 +35,9 @@ export default class MyStuff extends React.Component {
     return (
       <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>
         <SafeAreaView>
+          <NavigationEvents onWillFocus={payload => {
+            console.log('focused', payload)
+          }} />
           <FlatList
             ListHeaderComponent={() => (<Text style={[styles.categoriesText, { paddingTop: 10, paddingBottom: 15 }]}>Keep Watching</Text>)}
             data={server.getKeepWatching()}

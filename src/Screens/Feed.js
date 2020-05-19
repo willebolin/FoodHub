@@ -20,6 +20,7 @@ export default class Feed extends React.Component {
 
 
   render() {
+    server.getData()
     return (
       <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>
         <SafeAreaView>
