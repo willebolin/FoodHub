@@ -3,6 +3,7 @@ import { View, Text, Button } from 'react-native';
 import YouTubePlayer from 'react-native-youtube-sdk';
 import { SafeAreaView } from 'react-navigation';
 import AsyncStorage from '@react-native-community/async-storage';
+import { server } from '../Backend/Server';
 
 export default class Episode extends React.Component {
   constructor(props) {
@@ -26,7 +27,8 @@ export default class Episode extends React.Component {
         await AsyncStorage.setItem(JSON.stringify(this.props.series.id), 'true')
         await AsyncStorage.setItem(JSON.stringify(this.props.episode.ID), 'true')
         console.log(this.props.episode.episode_number)
-        this.setState = { watched: true }
+        server.getData()
+        this.setState({ watched: 'watched' })
       } catch (error) {
         console.log(error)
       }

@@ -21,6 +21,15 @@ var shows = [JustADash, workingHours, ItsAlive1, HowToWMM, perfectMeatball, ButB
 
 var activity = []
 
+var hasWatched = function (ID) {
+    activity.forEach((element) => {
+        if (element === ID.toString()) {
+            return true;
+        }
+    })
+    return false;
+};
+
 var getShow = function (id) {
     for (var i = 0; i < shows.length; i++) {
         if (shows[i].id.toString() === id.toString()) {
@@ -87,6 +96,7 @@ var server = {
     getReality: getReality,
     getHowTo: getHowTo,
     getData: getData,
+    hasWatched: hasWatched,
 };
 
 export var server;

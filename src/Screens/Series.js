@@ -17,10 +17,6 @@ export default class Series extends React.Component {
     this.series = this.props.route.params.seriesTitle;
   }
 
-  componentWillUnmount() {
-    server.getData()
-  }
-
   render() {
     return (
       <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>

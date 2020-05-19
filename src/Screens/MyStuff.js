@@ -12,48 +12,29 @@ import { styles } from '../../Stylesheet';
 import { useIsFocused } from '@react-navigation/native';
 
 
-export default class MyStuff extends React.Component {
-  willFocus = this.props.navigation.addListener(
-    'willFocus',
-    payload => {
-      this.forceUpdate();
-    }
+function MyStuff({ navigation }) {
+
+
+  const isFocused = useIsFocused();
+  return (
+    <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>
+      <SafeAreaView>
+        <FlatList
+          ListHeaderComponent={() => (<Text style={[styles.categoriesText, { paddingTop: 10, paddingBottom: 15 }]}>{isFocused ? 'Keep Watching' : 'No focus'}</Text>)}
+          data={server.getKeepWatching()}
+          initialNumToRender={2}
+          maxToRenderPerBatch={2}
+          windowSize={2}
+          keyExtractor={item => item.id.toString()}
+          renderItem={({ item }) => (
+            <MySeries
+              navigation={navigation}
+              series={item}
+            />
+          )}
+        />
+      </SafeAreaView>
+    </LinearGradient>
   );
-
-
-
-  /*
-        <LinearGradient colors={['#263238', '#37474F', '#455A64', "#546E7A"]} style={styles.linearGradient}>
-  */
-
-  componentDidMount() {
-    console.log("updated Mystuff")
-  }
-
-
-  render() {
-    return (
-      <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>
-        <SafeAreaView>
-          <NavigationEvents onWillFocus={payload => {
-            console.log('focused', payload)
-          }} />
-          <FlatList
-            ListHeaderComponent={() => (<Text style={[styles.categoriesText, { paddingTop: 10, paddingBottom: 15 }]}>Keep Watching</Text>)}
-            data={server.getKeepWatching()}
-            initialNumToRender={2}
-            maxToRenderPerBatch={2}
-            windowSize={2}
-            keyExtractor={item => item.id.toString()}
-            renderItem={({ item }) => (
-              <MySeries
-                navigation={this.props.navigation}
-                series={item}
-              />
-            )}
-          />
-        </SafeAreaView>
-      </LinearGradient>
-    );
-  }
 }
+export default MyStuff;
