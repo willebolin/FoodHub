@@ -10,10 +10,12 @@ import MySeries from '../Components/MySeries';
 import LinearGradient from 'react-native-linear-gradient';
 import { styles } from '../../Stylesheet';
 import { useIsFocused } from '@react-navigation/native';
+import Flurry from 'react-native-flurry-sdk';
 
 
 function MyStuff({ navigation }) {
 
+  Flurry.logEvent('Visit My Stuff');
 
   const isFocused = useIsFocused();
   return (

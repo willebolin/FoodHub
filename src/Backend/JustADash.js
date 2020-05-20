@@ -99,8 +99,8 @@ var JustADash = {
   episode: [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12],
   description:
     'Just A Dash is not your normal tv show. Follow Matty Matheson on his cooking adventure of failure, success, and stories about life',
-  image: require('../ThumbNails/JustADash.png'),
-  thumbnail: require('../ThumbNails/JustADashthumb.jpg'),
+  image: require('../ThumbNails/justADash2.jpg'),
+  thumbnail: require('../ThumbNails/JustADashthumb.png'),
   id: 1007,
 };
 

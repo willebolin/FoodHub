@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-navigation';
 import AsyncStorage from '@react-native-community/async-storage';
 import { server } from '../Backend/Server';
 import { styles } from '../../Stylesheet';
+import Flurry from 'react-native-flurry-sdk';
 
 export default class Episode extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ export default class Episode extends React.Component {
         await AsyncStorage.setItem(JSON.stringify(this.props.episode.ID), 'true')
         server.getData()
         this.setState({ watched: true })
+        Flurry.logEvent('Episode Click');
       } catch (error) {
         console.log(error)
       }

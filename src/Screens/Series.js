@@ -8,6 +8,7 @@ import Episode from '../Components/Episode';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import LinearGradient from 'react-native-linear-gradient';
 import { server } from '../Backend/Server';
+import Flurry from 'react-native-flurry-sdk';
 
 
 export default class Series extends React.Component {
@@ -15,9 +16,11 @@ export default class Series extends React.Component {
     super(props);
 
     this.series = this.props.route.params.seriesTitle;
-  }
+  };
+
 
   render() {
+    Flurry.logEvent('Visit Series');
     return (
       <LinearGradient colors={['#37474F', '#263238', '#263238']} style={styles.linearGradient}>
         <SafeAreaView style={{ paddingLeft: 15, paddingRight: 15, paddingTop: 0 }}>

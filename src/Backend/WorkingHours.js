@@ -45,7 +45,7 @@ var workingHours = {
   description:
     'This is a long random paragraph about the Series 24 hours working at. This has no real meaning and I am just writing something completely random to test this functionality',
   image: require('../ThumbNails/24hours.jpg'),
-  thumbnail: require('../ThumbNails/24hoursthumb.jpeg'),
+  thumbnail: require('../ThumbNails/24hoursthumb2.jpg'),
   id: 1013,
 };
 
