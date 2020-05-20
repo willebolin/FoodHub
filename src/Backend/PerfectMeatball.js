@@ -75,7 +75,7 @@ var perfectMeatball = {
   title: 'The Perfect Meatball',
   episode: [e1, e2, e3, e4, e5, e6, e7, e8, e9],
   description:
-    'This is a long random paragraph about the Series Just A Dash. This has no real meaning and I am just writing something completely random to test this functionality',
+    'Salut ! I\'m Alex, Self-taught Homecook / Self-taught Filmmaker. Food makes me happy ( editor\'s notice : and mad, except when I can break it down). Bread, Wine, Meat, Ramen, Pizza... Those common foods are in fact FASCINATING of COMPLEXITY.',
   image: require('../ThumbNails/perfectMeatball.jpg'),
   thumbnail: require('../ThumbNails/perfectMeatballthumbnail.jpg'),
   id: 1009,
