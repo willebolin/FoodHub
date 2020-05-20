@@ -22,7 +22,7 @@ export default class MySeries extends React.Component {
             source={this.props.series.image}
           />
           <Text style={[styles.thumbnailTitle, { paddingTop: 5 }]}>{this.props.series.title}</Text>
-          <Text style={[styles.thumbnailSubtitle, { paddingBottom: 20 }]}>Episode X - Episode Title</Text>
+          <Text style={[styles.thumbnailSubtitle, { paddingBottom: 20 }]}>{this.props.series.episode.length} episodes</Text>
         </TouchableOpacity>
       </View>
     );
