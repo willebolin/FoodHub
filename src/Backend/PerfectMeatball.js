@@ -75,7 +75,7 @@ var perfectMeatball = {
   title: 'The Perfect Meatball',
   episode: [e1, e2, e3, e4, e5, e6, e7, e8, e9],
   description:
-    'Salut ! I\'m Alex, Self-taught Homecook / Self-taught Filmmaker. Food makes me happy ( editor\'s notice : and mad, except when I can break it down). Bread, Wine, Meat, Ramen, Pizza... Those common foods are in fact FASCINATING of COMPLEXITY.',
+    'I want to make the perfect meatball. Sounds easier than it is. To make it I am willing to learn from the best recipes out there. Wish me luck !',
   image: require('../ThumbNails/perfectMeatball.jpg'),
   thumbnail: require('../ThumbNails/perfectMeatballthumbnail.jpg'),
   id: 1009,

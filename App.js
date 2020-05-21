@@ -12,7 +12,6 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
-
 function Home() {
   return (
     <Tab.Navigator

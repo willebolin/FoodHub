@@ -58,7 +58,7 @@ var e7 = {
 var handmade = {
     title: 'Handmade',
     episode: [e1, e2, e3, e4, e5, e6, e7],
-    description: "Handmade cookware and cuisine phenomena.",
+    description: "Discover famous cuisine and cookware being created by hand from scratch.",
     image: require('../ThumbNails/handmade.jpg'),
     thumbnail: require('../ThumbNails/handmadethumb.png'),
     id: 1003,

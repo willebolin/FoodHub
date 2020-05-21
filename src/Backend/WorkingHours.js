@@ -43,7 +43,7 @@ var workingHours = {
   title: 'Working 24 Hours at',
   episode: [e1, e2, e3, e4, e5],
   description:
-    'This is a long random paragraph about the Series 24 hours working at. This has no real meaning and I am just writing something completely random to test this functionality',
+    'Bon Appétit Deputy Editor Andrew Knowlton spends 24 hours working behind the scenes of iconic dining establishments, giving viewers an inside look at what goes into the preparation of delicious food.',
   image: require('../ThumbNails/24hours.jpg'),
   thumbnail: require('../ThumbNails/24hoursthumb2.jpg'),
   id: 1013,

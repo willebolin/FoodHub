@@ -59,7 +59,7 @@ var gordonramsey = {
     title: 'Gordon Ramsey',
     episode: [e1, e2, e3, e4, e5, e6, e7],
     description: 'Learn how to cook with Gordon Ramsey',
-    image: require('../ThumbNails/gordonramsey2.png'),
+    image: require('../ThumbNails/gordonramsey.jpg'),
     thumbnail: require('../ThumbNails/gordonramseythumb.jpg'),
     id: 1002
 };
