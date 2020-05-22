@@ -100,7 +100,6 @@ export default class Episode extends React.Component {
             onChangeState={e => this.loadData(e)}
             onChangeFullscreen={e => console.log('fullscreen', e.state)}
           />
-          <View style={this.isWatched() ? styles.videoWatched : {}} />
           <View style={{ flexDirection: 'column', justifyContent: 'center', flex: 1, marginLeft: 10 }}>
             <Text numberOfLines={4} style={this.isWatched() ? styles.episodeTitleWatched : styles.episodeTitleUnwatched}>{this.props.episode.episode_number}. {this.props.episode.episode_title} </Text>
             <Text style={styles.watchedText} >
