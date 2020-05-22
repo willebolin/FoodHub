@@ -63,16 +63,21 @@ var getKeepWatching = function () {
 
 var getRecommended = function () {
     var returnArray = Object.create(shows);
+    console.log(activity)
+    for (var i = 0; i < activity.length; i++) {
+        if (returnArray.includes(activity[i])) {
+            const index = returnArray.indexOf(activity[i])
+            if (index > -1) {
+                returnArray.splice(index, 1);
+            }
+        }
+    }
     while (returnArray.length > 5) {
         var index = Math.floor(Math.random() * (returnArray.length + 1));
         returnArray.splice(index, 1);
     }
     return returnArray;
 }
-
-var getNewReleases = function () {
-    return [handmade, ramenSchool, miseEnPlace, reverseEngineering]
-};
 
 var getCreators = function () {
     return [ButBetter, ramenSchool, perfectMeatball]
@@ -90,9 +95,7 @@ var getHowTo = function () {
 var server = {
     getShow: getShow,
     getRecommended: getRecommended,
-    getNewReleases: getNewReleases,
     getKeepWatching: getKeepWatching,
-    getNewReleases: getNewReleases,
     getCreators: getCreators,
     getReality: getReality,
     getHowTo: getHowTo,

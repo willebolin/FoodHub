@@ -26,11 +26,10 @@ export default class Feed extends React.Component {
               <View>
                 <Slide navigation={this.props.navigation} />
               </View>
-              <Category navigation={this.props.navigation} name={"Randomly Generated Shows"} getShows={server.getRecommended()} />
+              <Category navigation={this.props.navigation} name={"Explore New Shows"} getShows={server.getRecommended()} />
               <Category navigation={this.props.navigation} name={"Home Cooks"} getShows={server.getCreators()} />
-              <Category navigation={this.props.navigation} name={"Get inspired to cook"} getShows={server.getReality()} />
-              <Category navigation={this.props.navigation} name={"How To Cook"} getShows={server.getHowTo()} />
-              <Category navigation={this.props.navigation} name={"New Releases"} getShows={server.getNewReleases()} />
+              <Category navigation={this.props.navigation} name={"Cooking Entertainment"} getShows={server.getReality()} />
+              <Category navigation={this.props.navigation} name={"Learn To Cook"} getShows={server.getHowTo()} />
             </ScrollView>
           </View>
         </SafeAreaView>
